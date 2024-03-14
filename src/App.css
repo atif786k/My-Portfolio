@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+.normalFont {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fancyFont {
+  font-family: "Acme", sans-serif;
+  /* font-weight: 300; */
+  font-style: normal;
+}
+
+/* gsap Learning  */
+.magneto {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  background-color: orange;
+  margin: 200px 200px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
