@@ -7,13 +7,14 @@ import {
   IoLogoLinkedin,
   IoLogoInstagram,
   IoLogoGithub,
+  IoLogoTwitter,
 } from "react-icons/io5";
 
 const Footer = (props) => {
   return (
     <>
-      <div className="big_heading md:px-[28px]">
-        <div className="big_heading_inner fancyFont lg:flex-row lg:justify-center lg:space-x-8 lg:text-[130px]">
+      <div className="big-heading md:px-[28px]">
+        <div className="heading-containt fancyFont lg:flex-row lg:justify-center lg:space-x-8 lg:text-[130px]">
           <span className="one">let's</span>
           <span className="two">code</span>
           <span className="three">together</span>
@@ -23,50 +24,78 @@ const Footer = (props) => {
       <section
         ref={props.contactRef}
         id="contact"
-        className="footer_container normalFont lg:px-[180px]"
+        className="footer-container normalFont lg:px-[180px] 3:px-[240px]"
       >
-        <div className="footer_first_container md:mx-4 md:flex justify-between">
-          <div className="footer_heading lg:text-[70px]">
+        <div className="footer-first-div md:mx-4 md:flex justify-between">
+          <div className="footer-heading lg:text-[70px]">
             <h1>Get</h1>
             <h1>in</h1>
             <h1>Touch</h1>
           </div>
 
           <div className="flex flex-col md:w-[400px] lg:w-[500px]">
-            <div className="footer_buttons">
-              <button className="contact_button btnType1">
-                <span className="btn-txt">matif91201@gmail.com</span>
+            <div className="footer-buttons">
+              <button className="contact-btn">
+                <p className="btn-animation"></p>
+                <span className="contact-btn-span">
+                  {/* <a href="mailto:matif91201@gmail.com" target="_blank"> */}
+                  matif91201@gmail.com
+                  {/* </a> */}
+                </span>
               </button>
-              <button className="contact_button btnType1">
-                <span className="btn-txt">IND +91 7727075499</span>
+              <button className="contact-btn">
+                <span className="contact-btn-span">IND +91 7727075499</span>
               </button>
             </div>
 
-            <div className="footer_social">
+            <div className="footer-socialMedia">
               <ul className="space-x-6">
                 <li>
-                  <IoLogoLinkedin />
+                  <a href="https://github.com/atif786k" target="_blank">
+                    <IoLogoGithub />
+                  </a>
                 </li>
                 <li>
-                  <IoLogoInstagram />
+                  <a
+                    href="https://www.linkedin.com/in/mohammad-atif-a14b04205/"
+                    target="_blank"
+                  >
+                    <IoLogoLinkedin />
+                  </a>
                 </li>
                 <li>
-                  <IoLogoGithub />
+                  <a
+                    href="https://www.instagram.com/_mohd.atif__/?hl=en"
+                    target="_blank"
+                  >
+                    <IoLogoInstagram />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.facebook.com/moh.atif.927"
+                    target="_blank"
+                  >
+                    <IoLogoFacebook />
+                  </a>
                 </li>
                 <li>
-                  <IoLogoFacebook />
-                </li>
-                <li>
-                  <BiLogoGmail />
+                  <a
+                    href="https://www.facebook.com/moh.atif.927"
+                    target="_blank"
+                  >
+                    <IoLogoTwitter />
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        <hr className="my-8 border-slate-600" />
+        <hr className="my-8 border-[#808080]" />
 
-        <div className="footer_second_container">
+        <div className="footer-second-div">
           <span className="flex items-center">
             <FaRegCopyright className="mr-2" /> Copyright
           </span>

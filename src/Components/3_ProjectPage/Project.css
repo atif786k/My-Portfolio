@@ -1,22 +1,23 @@
-.project_container {
+.project-container {
   width: 100%;
   margin: 42px 0px;
   padding: 32px 28px;
   text-align: center;
+  color: #222831;
   /* display: flex;
   justify-content: center;
   align-items: center; */
   /* border: 2px solid red; */
 }
 
-.project_container h2 {
+.project-container h2 {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.02rem;
   text-transform: uppercase;
 }
 
-.project_container h3 {
+.project-container h3 {
   /* padding: 0px 3px; */
   color: grey;
   font-size: 12px;
@@ -25,30 +26,30 @@
   letter-spacing: 0.1rem;
 }
 
-.more_work {
+/* .more_work {
   font-size: 18px;
   font-weight: 600;
-}
+} */
 
 
-.button {
+.project-btn {
   margin-top: 44px;
   height: 60px;
   width: 200px;
   position: relative;
   background-color: transparent;
   cursor: pointer;
-  border: 2px solid rgb(168, 168, 168);
+  border: 1px solid grey;
   overflow: hidden;
   border-radius: 30px;
-  color: #333;
+  color: #222831;
   transition: all 0.5s ease-in-out;
 }
 
-.btn-txt {
+.project-btn-span {
   z-index: 1;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
 }
 
 .type1::after {
@@ -57,7 +58,7 @@
   left: 0;
   top: 0;
   transition: all 0.5s ease-in-out;
-  background-color: #333;
+  background-color: #2ec4b6;
   border-radius: 30px;
   visibility: hidden;
   height: 10px;
@@ -65,9 +66,8 @@
   z-index: -1;
 }
 
-.button:hover {
-  box-shadow: 1px 1px 200px #252525;
-  color: #fff;
+.project-btn:hover {
+  color: #eeeeee;
   border: none;
 }
 

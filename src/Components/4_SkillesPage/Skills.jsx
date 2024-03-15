@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../4_SkillesPage/Skills.css";
 import { IoLogoJavascript } from "react-icons/io5";
 import {
@@ -17,41 +17,59 @@ import {
   SiMysql,
   SiNodedotjs,
 } from "react-icons/si";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Skills = () => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".div-styling", { y: 100, opacity: 0 });
+    gsap.to(".div-styling", {
+      scrollTrigger: {
+        trigger: ".div-styling",
+        start: "top 100%",
+        end: "bottom 90%",
+        scrub: 1,
+      },
+      y: 0,
+      opacity: 1,
+      duration: 1.5,
+    });
+  }, [".div-styling", { y: 100, opacity: 0 }]);
   return (
     <>
       <section
         id="skills"
-        className="skills_container normalFont lg:px-[180px]"
+        className="skills-container normalFont lg:px-[180px]"
       >
         <h2 className="fancyFont">Tools</h2>
-        <div className="skills_containt space-y-16 lg:flex-row lg:space-y-0">
-          <div className="styling front_end relative lg:mx-2 xl:mx-[32px]">
+        <div className="skills-div space-y-16 lg:flex-row lg:space-y-0">
+          <div className="div-styling front-end relative lg:mx-2 xl:mx-[32px]">
             <h4 className="">Front-end</h4>
-            <FaHtml5 className="icon_style" />
-            <FaCss3 className="icon_style" />
-            <SiTailwindcss className="icon_style" />
-            <IoLogoJavascript className="icon_style" />
-            <FaReact className="icon_style" />
-            <SiNextdotjs className="icon_style" />
+            <FaHtml5 className="icon-style" />
+            <FaCss3 className="icon-style" />
+            <SiTailwindcss className="icon-style" />
+            <IoLogoJavascript className="icon-style" />
+            <FaReact className="icon-style" />
+            <SiNextdotjs className="icon-style" />
           </div>
 
-          <div className="styling back-end relative lg:mx-2 xl:mx-[32px]">
+          <div className="div-styling back-end relative lg:mx-2 xl:mx-[32px]">
             <h4 className="">Back-end</h4>
-            <SiFirebase className="icon_style" />
-            <SiNextdotjs className="icon_style" />
-            <SiNodedotjs className="icon_style" />
-            <SiMongodb className="icon_style" />
-            <SiMysql className="icon_style" />
+            <SiFirebase className="icon-style" />
+            <SiNextdotjs className="icon-style" />
+            <SiNodedotjs className="icon-style" />
+            <SiMongodb className="icon-style" />
+            <SiMysql className="icon-style" />
           </div>
 
-          <div className="styling dsa relative lg:mx-2 xl:mx-[32px]">
+          <div className="div-styling dsa relative lg:mx-2 xl:mx-[32px]">
             <h4 className="">dsa & other</h4>
             <img src="/C-icon.png" alt="" width="34px" className="m-[18px]" />
-            <FaJava className="icon_style" />
-            <FaPython className="icon_style" />
-            <FaGitAlt className="icon_style" />
+            <FaJava className="icon-style" />
+            <FaPython className="icon-style" />
+            <FaGitAlt className="icon-style" />
             <img
               src="/Vscode-icon.png"
               alt=""
