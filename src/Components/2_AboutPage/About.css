@@ -17,13 +17,11 @@
   height: 180px;
   width: 180px;
   margin-top: 56px;
-  
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #222831;
   color: #eeeeee;
-  border: 2px solid #222831;
   border-radius: 100%;
   cursor: pointer;
   overflow: hidden;
@@ -52,8 +50,6 @@
 }
 
 .about-btn:hover {
-  /* box-shadow: 1px 1px 200px #252525; */
-  /* color: #fff; */
   border: 2px solid #2ec4b6;
 }
 
@@ -62,13 +58,13 @@
   transform: scale(100) translateX(2px);
 }
 
-
-
 /* About Detailed component CSS */
-.aboutDetailed_container {
+.aboutDetailed-container {
   padding: 32px 28px 0px 28px;
+  background-color: white;
+  color: #222831;
 }
-.about_nav {
+.aboutDetailed-nav {
   padding: 12px;
   display: flex;
   justify-content: space-between;
@@ -76,78 +72,85 @@
   font-size: 18px;
   font-weight: 500;
 }
-.about_nav h4{
+.aboutDetailed-nav h4 {
   font-family: "Protest Guerrilla", sans-serif;
   font-size: 28px;
 }
 
-.about_nav ul li {
+.aboutDetailed-nav ul li {
   cursor: pointer;
   position: relative;
 }
+.bg-color {
+  background-color: #222831;
+}
 
-.about_info {
+.detailed-info {
   display: flex;
   flex-direction: column;
 }
 
-.intro_heading {
+.occupation-heading {
   padding: 64px 0px;
   font-size: 64px;
   font-weight: 400;
-  /* color: white;
-  -webkit-text-stroke: 1px black; */
   word-spacing: 2px;
   line-height: 75%;
-  
+
   display: flex;
   flex-direction: column;
   align-items: end;
 }
 
-.detailed_section {
+.detailed-section {
   padding: 64px 0px;
   display: flex;
   flex-direction: column;
   font-size: 18px;
 }
-.first_detailed_section {
+.detailed-section-first {
   word-spacing: 4px;
 }
 
-.same_style {
+.same-style {
   display: flex;
   flex-direction: column;
 }
 
-.myEducation_section h2,
-.myServices_section h2 {
+.myEducation-section,
+.myServices-section {
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+.myEducation-section h2,
+.myServices-section h2 {
   margin-top: 18px;
   font-size: 28px;
   font-weight: 500;
 }
 
-.same_style p h3 {
+.same-style p h3 {
   padding: 6px 0px;
   font-size: 22px;
   font-weight: 500;
   display: flex;
   align-items: center;
 }
-.same_style p {
+.same-style p {
   display: flex;
   flex-direction: column;
   font-size: 18px;
 }
 @media (min-width: 1024px) {
-  .same_style p {
+  .same-style p {
     width: 45%;
     padding: 6px 0px;
   }
-  .intro_heading{
+  .occupation-heading {
     line-height: 120%;
   }
-  .intro_heading h1{
+  .occupation-heading h1 {
     font-size: 120px;
   }
 }

@@ -25,6 +25,11 @@
   color: #2ec4b6;
 }
 
+.span-two {
+  color: #2ec4b6;
+  -webkit-text-stroke-color: #2ec4b6;
+}
+
 @media (min-width: 1024px) {
   .heading-containt {
     -webkit-text-stroke-width: 10px;
@@ -33,13 +38,11 @@
 }
 
 /* footer styling */
-
 .footer-container {
   width: 100%;
   padding: 32px 28px;
   background: #222831;
   color: #eeeeee;
-  /* z-index: -1; */
 }
 .footer-heading {
   font-size: 52px;
@@ -74,64 +77,56 @@
   font-weight: 600;
 }
 
-/* Button animations */
-.contact-btn {
-  margin: 18px 0px;
+/*button animation testing */
+.contact-btn-2,
+.contact-btn-1 {
   height: 60px;
   width: 100%;
+  margin: 18px 0px;
   position: relative;
-  background-color: transparent;
-  color: #eeeeee;
-  border: 1px solid #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: grey;
+  border: 1px solid grey;
   border-radius: 30px;
   cursor: pointer;
-  /* overflow: hidden; */
-  /* transition: all 0.5s ease-in-out; */
+  overflow: hidden;
 }
-
-.contact-btn-span {
-  font-weight: 500;
+.contact-btn-span-2,
+.contact-btn-span-1 {
   z-index: 1;
+  font-size: 18px;
+  font-weight: 400;
   letter-spacing: 0.05rem;
 }
-.btn-animation {
-  height: 10px;
-  width: 10px;
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 100%;
-  transition: all 0.3s ease-in;
-  background-color: #2ec4b6;
-  z-index: -1;
-}
-.contact-btn:hover .btn-animation {
-  transform: scale(50);
-}
-
-/* .btnType1::after {
+.contact-type1::after,
+.contact-type2::after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
-  transition: all 0.7s ease-in-out;
-  background-color: rgb(77, 201, 254);
+  /* transform: translate(-50%, -50%); */
+  transition: all 0.5s ease-in-out;
+  background-color: #2ec4b6;
   border-radius: 30px;
   visibility: hidden;
   height: 10px;
   width: 10px;
   z-index: -1;
-} */
+}
 
-/* .contact_button:hover {
-  box-shadow: 1px 1px 200px #252525;
-  color: #fff; */
-/* background-color: rgb(77, 201, 254); */
-/* border: none; */
-/* } */
+.contact-btn-1:hover,
+.contact-btn-2:hover {
+  color: #eeeeee;
+}
 
-/* .btnType1:hover::after {
+.contact-type1:hover::after {
   visibility: visible;
   transform: scale(100) translateX(2px);
-} */
+}
+.contact-type2:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
+}

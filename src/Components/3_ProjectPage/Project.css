@@ -4,10 +4,6 @@
   padding: 32px 28px;
   text-align: center;
   color: #222831;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* border: 2px solid red; */
 }
 
 .project-container h2 {
@@ -18,7 +14,6 @@
 }
 
 .project-container h3 {
-  /* padding: 0px 3px; */
   color: grey;
   font-size: 12px;
   font-weight: bold;
@@ -26,24 +21,21 @@
   letter-spacing: 0.1rem;
 }
 
-/* .more_work {
-  font-size: 18px;
-  font-weight: 600;
-} */
-
-
+/* button animation */
 .project-btn {
   margin-top: 44px;
   height: 60px;
   width: 200px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   cursor: pointer;
   border: 1px solid grey;
   overflow: hidden;
   border-radius: 30px;
   color: #222831;
-  transition: all 0.5s ease-in-out;
 }
 
 .project-btn-span {
@@ -75,3 +67,29 @@
   visibility: visible;
   transform: scale(100) translateX(2px);
 }
+
+/* .project-btn {
+  height: 60px;
+  width: 200px;
+  margin-top: 44px;
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  color: #222831;
+  border: 1px solid grey;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 0 #2ec4b6;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+.project-btn-span {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+
+.project-btn:hover {
+  color: #eeeeee;
+  border: none;
+  box-shadow: inset 500px 0 0 0 #2ec4b6;
+} */

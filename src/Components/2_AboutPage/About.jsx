@@ -1,59 +1,60 @@
 import React, { useEffect } from "react";
 import "../2_AboutPage/About.css";
 import { Link } from "react-router-dom";
-// import { gsap } from "gsap";
 import { gsap, Power4, Elastic } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import MagnetoButton from "../GSAP";
+
 
 const About = (props) => {
-  useEffect(() => {
-    const magneto = document.querySelector(".about-btn");
-    const magnetoText = document.querySelector(".about-btn .about-btn-span");
+  // useEffect(() => {
+  //   const magneto = document.querySelector(".about-btn");
+  //   const magnetoText = document.querySelector(".about-btn .about-btn-span");
 
-    const activeMagneto = (event) => {
-      let boundBox = magneto.getBoundingClientRect();
-      const magnetoStrength = 60;
-      const magnetoTextStrength = 70;
-      const newX = (event.clientX - boundBox.left) / magneto.offsetWidth - 0.5;
-      const newY = (event.clientY - boundBox.top) / magneto.offsetHeight - 0.5;
+  //   const activeMagneto = (event) => {
+  //     let boundBox = magneto.getBoundingClientRect();
+  //     const magnetoStrength = 60;
+  //     const magnetoTextStrength = 70;
+  //     const newX = (event.clientX - boundBox.left) / magneto.offsetWidth - 0.5;
+  //     const newY = (event.clientY - boundBox.top) / magneto.offsetHeight - 0.5;
 
-      gsap.to(magneto, {
-        duration: 1,
-        x: newX * magnetoStrength,
-        y: newY * magnetoStrength,
-        ease: Power4.easeOut,
-      });
-      gsap.to(magnetoText, {
-        duration: 1,
-        x: newX * magnetoTextStrength,
-        y: newY * magnetoTextStrength,
-        ease: Power4.easeOut,
-      });
-    };
+  //     gsap.to(magneto, {
+  //       duration: 1,
+  //       x: newX * magnetoStrength,
+  //       y: newY * magnetoStrength,
+  //       ease: Power4.easeOut,
+  //     });
+  //     gsap.to(magnetoText, {
+  //       duration: 1,
+  //       x: newX * magnetoTextStrength,
+  //       y: newY * magnetoTextStrength,
+  //       ease: Power4.easeOut,
+  //     });
+  //   };
 
-    const resetMagneto = () => {
-      gsap.to(magneto, {
-        duration: 1,
-        x: 0,
-        y: 0,
-        ease: Elastic.easeOut,
-      });
-      gsap.to(magnetoText, {
-        duration: 1,
-        x: 0,
-        y: 0,
-        ease: Elastic.easeOut,
-      });
-    };
+  //   const resetMagneto = () => {
+  //     gsap.to(magneto, {
+  //       duration: 1,
+  //       x: 0,
+  //       y: 0,
+  //       ease: Elastic.easeOut,
+  //     });
+  //     gsap.to(magnetoText, {
+  //       duration: 1,
+  //       x: 0,
+  //       y: 0,
+  //       ease: Elastic.easeOut,
+  //     });
+  //   };
 
-    magneto.addEventListener("mousemove", activeMagneto);
-    magneto.addEventListener("mouseleave", resetMagneto);
+  //   magneto.addEventListener("mousemove", activeMagneto);
+  //   magneto.addEventListener("mouseleave", resetMagneto);
 
-    return () => {
-      magneto.removeEventListener("mousemove", activeMagneto);
-      magneto.removeEventListener("mouseleave", resetMagneto);
-    };
-  }, []);
+  //   return () => {
+  //     magneto.removeEventListener("mousemove", activeMagneto);
+  //     magneto.removeEventListener("mouseleave", resetMagneto);
+  //   };
+  // }, []);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -87,9 +88,17 @@ const About = (props) => {
           high-quality results under strict deadlines.
         </p>
         <Link to="/aboutdetailed" rel="">
-          <button className="about-btn about_type1">
+          {/* <button className="about-btn about_type1">
             <span className="about-btn-span fancyFont">About me</span>
-          </button>
+          </button> */}
+          <MagnetoButton
+            buttonClass="about-btn"
+            buttonClass1="about_type1"
+            textClass="about-btn-span"
+            buttonText="About me"
+            x={60}
+            y={70}
+          />
         </Link>
       </div>
     </>

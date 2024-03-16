@@ -69,7 +69,7 @@ const Home = () => {
                 <BsCodeSlash className="mr-2" /> Atif
               </span>
             </h4>
-            <div className="btn-circle">
+            <div className="btn-circle btn-border">
               <IoClose onClick={closeNav} className="close-btn" />
             </div>
           </div>
@@ -151,7 +151,7 @@ const Home = () => {
           </ul>
           <p
             onClick={toggleNav}
-            className="btn-circle flex items-center justify-center md:hidden"
+            className="btn-circle btn-menu-fixed flex items-center justify-center md:hidden"
           >
             <RiMenu4Fill className="menu-btn" />
           </p>

@@ -1,6 +1,7 @@
 import React from "react";
 import "../3_ProjectPage/Project.css";
 import ProjectCard from "./ProjectCard";
+import MagnetoButton from "../GSAP";
 
 const Project = (props) => {
   const ProjectDetails = [
@@ -71,11 +72,14 @@ const Project = (props) => {
           })}
         </div>
         <div className="w-[100%] flex justify-center">
-          <button className="project-btn type1">
-            <span className="project-btn-span">
-              More Work <sup className="animate-pulse">8</sup>
-            </span>
-          </button>
+          <MagnetoButton
+            buttonClass="project-btn"
+            buttonClass1="type1"
+            textClass="project-btn-span"
+            buttonText={`More Work`}
+            x={25}
+            y={35}
+          />
         </div>
       </section>
     </>

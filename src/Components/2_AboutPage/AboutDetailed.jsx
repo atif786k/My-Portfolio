@@ -1,10 +1,9 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import "../1_HomePage/Home.css";
 import "./About.css";
 import { BsStars, BsCodeSlash } from "react-icons/bs";
 import Footer from "../5_FooterPage/Footer";
 import { Link } from "react-router-dom";
-
 
 const AboutDetailed = () => {
   const contact = useRef(null);
@@ -17,9 +16,9 @@ const AboutDetailed = () => {
   };
   return (
     <>
-      <div className="normalFont aboutDetailed_container lg:px-[180px]">
-        <nav className="about_nav">
-        <h4>
+      <div className="normalFont aboutDetailed-container lg:px-[180px]">
+        <nav className="aboutDetailed-nav">
+          <h4>
             <span className="flex items-center">
               <BsCodeSlash className="menu_icon mr-1" />
               Atif
@@ -27,28 +26,28 @@ const AboutDetailed = () => {
           </h4>
           <ul className="space-x-6 flex">
             <Link to="/" rel="">
-            <li>
-              Home
-              <p className="hover_dot_animation"></p>
-            </li>
+              <li>
+                Home
+                <p className="dot-animation bg-color"></p>
+              </li>
             </Link>
             <li onClick={() => scrollToSection(contact)}>
-              Contact<p className="hover_dot_animation"></p>
+              Contact<p className="dot-animation bg-color"></p>
             </li>
           </ul>
         </nav>
 
-        <div className="about_info">
-          <p className="intro_heading">
+        <div className="Detailed-info">
+          <p className="occupation-heading">
             <h1 className="">Designer</h1>
             <h1 className="">and</h1>
             <h1 className="">Developer</h1>
           </p>
 
-          <hr />
+          <hr className="horizontal-line" />
 
-          <div className="detailed_section lg:flex-row">
-            <div className="first_detailed_section space-y-8 lg:w-[50%] lg:pr-10">
+          <div className="detailed-section lg:flex-row">
+            <div className="detailed-section-first space-y-8 lg:w-[50%] lg:pr-10">
               <p>
                 Hey there ! 👋 I'm Mohammad Atif, a passionate software
                 developer and a web developer with a love for crafting
@@ -75,15 +74,15 @@ const AboutDetailed = () => {
               <p>Let's build something cool & amazing !</p>
             </div>
 
-            <div className="second_detailed_section mt-10 lg:mt-0 lg:w-[50%]">
+            <div className="detailed-section-second mt-10 lg:mt-0 lg:w-[50%]">
               <img src="./bg_remove/img5.jpg" alt="" />
             </div>
           </div>
 
-          <div className="myEducation_section ">
+          <div className="myEducation-section ">
             <h2>Qualifications</h2>
-            <hr />
-            <div className="same_style space-y-8 lg:space-x-8 lg:space-y-0  lg:flex-row">
+            <hr className="horizontal-line" />
+            <div className="same-style space-y-8 lg:space-x-8 lg:space-y-0  lg:flex-row">
               <p>
                 <h3>Schooling</h3>I have completed my schooling from St John's
                 Sr Sec School Firozabad, India
@@ -99,10 +98,10 @@ const AboutDetailed = () => {
             </div>
           </div>
 
-          <div className="myServices_section my-12">
+          <div className="myServices-section my-12">
             <h2>How can i help you ...</h2>
-            <hr />
-            <div className="same_style space-y-8 lg:space-x-8 lg:space-y-0 lg:flex-row">
+            <hr className="horizontal-line" />
+            <div className="same-style space-y-8 lg:space-x-8 lg:space-y-0 lg:flex-row">
               <p>
                 <h3>
                   Design <BsStars className="ml-5" />
@@ -122,7 +121,7 @@ const AboutDetailed = () => {
           </div>
         </div>
       </div>
-      <Footer contactRef={contact}/>
+      <Footer contactRef={contact} />
     </>
   );
 };
