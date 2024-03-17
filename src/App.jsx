@@ -3,6 +3,7 @@ import Home from "./Components/1_HomePage/Home";
 import AboutDetailed from "./Components/2_AboutPage/AboutDetailed";
 import GSAP from "./Components/GSAP";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./Components/ScrollToTop";
 
 // import Lenis from "@studio-freight/lenis";
 // import { gsap } from "gsap";
@@ -23,6 +24,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop/>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route

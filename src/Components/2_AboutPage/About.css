@@ -60,12 +60,14 @@
 
 /* About Detailed component CSS */
 .aboutDetailed-container {
-  padding: 32px 28px 0px 28px;
-  background-color: white;
+  width: 100%;
+  background-color: #eeeeee;
   color: #222831;
 }
 .aboutDetailed-nav {
-  padding: 12px;
+  padding: 44px 28px 12px 28px;
+  background-color: white;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,8 +88,10 @@
 }
 
 .detailed-info {
+  padding: 32px 28px 12px 28px;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 
 .occupation-heading {
@@ -96,17 +100,18 @@
   font-weight: 400;
   word-spacing: 2px;
   line-height: 75%;
-
   display: flex;
   flex-direction: column;
   align-items: end;
 }
 
 .detailed-section {
-  padding: 64px 0px;
+  padding: 96px 28px 64px 28px;
   display: flex;
   flex-direction: column;
+  align-items: start;
   font-size: 18px;
+  background-color: white;
 }
 .detailed-section-first {
   word-spacing: 4px;
@@ -117,16 +122,15 @@
   flex-direction: column;
 }
 
-.myEducation-section,
-.myServices-section {
+.section-info {
   width: 100%;
-  background-color: #eeeeee;
+  padding: 32px 28px;
 }
 
 .myEducation-section h2,
 .myServices-section h2 {
   margin-top: 18px;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 500;
 }
 
@@ -143,6 +147,9 @@
   font-size: 18px;
 }
 @media (min-width: 1024px) {
+  .section-info {
+    padding: 64px 180px;
+  }
   .same-style p {
     width: 45%;
     padding: 6px 0px;

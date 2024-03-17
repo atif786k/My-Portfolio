@@ -1,9 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "../1_HomePage/Home.css";
 import "./About.css";
-import { BsStars, BsCodeSlash } from "react-icons/bs";
+import { BsStars, BsCodeSlash, BsArrowRight } from "react-icons/bs";
 import Footer from "../5_FooterPage/Footer";
 import { Link } from "react-router-dom";
+import { gsap, Power4, Elastic } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const AboutDetailed = () => {
   const contact = useRef(null);
@@ -14,10 +16,51 @@ const AboutDetailed = () => {
       behavior: "smooth",
     });
   };
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".arrow", { rotate: 0 });
+    gsap.to(".arrow", {
+      scrollTrigger: {
+        trigger: ".arrow",
+        start: "top 100%",
+        end: "top 80%",
+        scrub: 2,
+        // markers: true,
+      },
+      rotate: 45,
+      duration: 2,
+    });
+
+    // useEffect(() => {
+    let tl = gsap.timeline({});
+    gsap.from(".detailed-section", {
+      y: 300,
+      opacity: 0,
+    });
+    tl.to(".detailed-section", {
+      y: 0,
+      opacity: 1,
+      duration: 1.5,
+    });
+    gsap.from(".occupation-heading h1", {
+      x: -500,
+      opacity: 0,
+    });
+    tl.to(".occupation-heading h1", {
+      x: 0,
+      opacity: 1,
+      duration: 1.5,
+      stagger: 0.8,
+    });
+    // }, []);
+  }, []);
+
   return (
     <>
-      <div className="normalFont aboutDetailed-container lg:px-[180px]">
-        <nav className="aboutDetailed-nav">
+      <div className="normalFont aboutDetailed-container">
+        <nav className="aboutDetailed-nav lg:px-[180px]">
           <h4>
             <span className="flex items-center">
               <BsCodeSlash className="menu_icon mr-1" />
@@ -37,58 +80,61 @@ const AboutDetailed = () => {
           </ul>
         </nav>
 
-        <div className="Detailed-info">
+        <div className="detailed-info lg:px-[180px]">
           <p className="occupation-heading">
-            <h1 className="">Designer</h1>
-            <h1 className="">and</h1>
-            <h1 className="">Developer</h1>
+            <h1 className="heading-one">Designer</h1>
+            <h1 className="heading-two">and</h1>
+            <h1 className="heading-three">Developer</h1>
           </p>
+        </div>
 
-          <hr className="horizontal-line" />
+        <hr className="horizontal-line lg:mx-[180px]" />
 
-          <div className="detailed-section lg:flex-row">
-            <div className="detailed-section-first space-y-8 lg:w-[50%] lg:pr-10">
-              <p>
-                Hey there ! 👋 I'm Mohammad Atif, a passionate software
-                developer and a web developer with a love for crafting
-                innovative solutions. I thrive on turning complex problems into
-                simple, elegant, and intuitive software. Here's a bit about me
-                ...
-              </p>
-              <p>
-                I hold a Btech degree in Computer Science and Engineering from
-                Integral University Lucknow. My journey into the world of
-                programming started during the lockdown period when whole world
-                is busy in fighting with corona virus and here I started
-                developing feelings for coding and developing stuffs during that
-                time. Since then, I've been on an exciting adventure of
-                continuous learning and growth.
-              </p>
-              <p>
-                I'm always open to new opportunities, collaborations, and
-                discussions about all things tech. Feel free to reach out me
-                through my Contact section if you'd like to chat about software
-                development, share ideas, or explore potential projects
-                together.
-              </p>
-              <p>Let's build something cool & amazing !</p>
-            </div>
+        <div className="detailed-section lg:flex-row  lg:px-[180px]">
+          <div className="detailed-section-first space-y-8 lg:w-[50%] lg:pr-10">
+            <BsArrowRight className="arrow text-3xl mb-4" />
 
-            <div className="detailed-section-second mt-10 lg:mt-0 lg:w-[50%]">
-              <img src="./bg_remove/img5.jpg" alt="" />
-            </div>
+            <p>
+              Hey there ! 👋 I'm Mohammad Atif, a passionate software developer
+              and a web developer with a love for crafting innovative solutions.
+              I thrive on turning complex problems into simple, elegant, and
+              intuitive software. Here's a bit about me ...
+            </p>
+            <p>
+              I hold a Btech degree in Computer Science and Engineering from
+              Integral University Lucknow. My journey into the world of
+              programming started during the lockdown period when whole world is
+              busy in fighting with corona virus and here I started developing
+              feelings for coding and developing stuffs during that time. Since
+              then, I've been on an exciting adventure of continuous learning
+              and growth.
+            </p>
+            <p>
+              I'm always open to new opportunities, collaborations, and
+              discussions about all things tech. Feel free to reach out me
+              through my Contact section if you'd like to chat about software
+              development, share ideas, or explore potential projects together.
+            </p>
+            <p>Let's build something cool & amazing !</p>
           </div>
 
+          <div className="detailed-section-second mt-10 lg:mt-0 lg:w-[50%]">
+            <img src="./bg_remove/img5.jpg" alt="" />
+          </div>
+        </div>
+
+        <div className="section-info space-y-12">
           <div className="myEducation-section ">
             <h2>Qualifications</h2>
-            <hr className="horizontal-line" />
             <div className="same-style space-y-8 lg:space-x-8 lg:space-y-0  lg:flex-row">
               <p>
+                <hr className="horizontal-line my-6" />
                 <h3>Schooling</h3>I have completed my schooling from St John's
                 Sr Sec School Firozabad, India
                 <span>Duration : 2005 - 2020</span>
               </p>
               <p>
+                <hr className="horizontal-line my-6" />
                 <h3>Graduation</h3>
                 Currently I'm pursuing Btech in Computer Science & Engineering
                 from Integral University Lucknow, India
@@ -98,11 +144,11 @@ const AboutDetailed = () => {
             </div>
           </div>
 
-          <div className="myServices-section my-12">
+          <div className="myServices-section">
             <h2>How can i help you ...</h2>
-            <hr className="horizontal-line" />
             <div className="same-style space-y-8 lg:space-x-8 lg:space-y-0 lg:flex-row">
               <p>
+                <hr className="horizontal-line my-6" />
                 <h3>
                   Design <BsStars className="ml-5" />
                 </h3>
@@ -111,6 +157,7 @@ const AboutDetailed = () => {
                 unique goals and translating them into a compelling design.
               </p>
               <p>
+                <hr className="horizontal-line my-6" />
                 <h3>
                   Development <BsStars className="ml-5" />
                 </h3>
@@ -120,8 +167,8 @@ const AboutDetailed = () => {
             </div>
           </div>
         </div>
+        <Footer contactRef={contact} />
       </div>
-      <Footer contactRef={contact} />
     </>
   );
 };
