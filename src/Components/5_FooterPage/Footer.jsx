@@ -1,6 +1,5 @@
 import React from "react";
 import "../5_FooterPage/Footer.css";
-import { BiLogoGmail } from "react-icons/bi";
 import { FaRegCopyright } from "react-icons/fa6";
 import {
   IoLogoFacebook,
@@ -9,12 +8,13 @@ import {
   IoLogoGithub,
   IoLogoTwitter,
 } from "react-icons/io5";
-import MagnetoButton from "../GSAP";
+import MagnetoButton from "../Magneto";
+
 const Footer = (props) => {
   return (
     <>
       <div className="big-heading md:px-[28px]">
-        <div className="heading-containt fancyFont lg:flex-row lg:justify-center lg:space-x-8 lg:text-[130px]">
+        <div className="heading-containt fancyFont lg:flex-row lg:justify-center lg:space-x-8 lg:text-[130px] 3xl:text-[148px]">
           <span className="span-one">let's</span>
           <span className="span-two">code</span>
           <span className="span-three">together</span>
@@ -24,7 +24,7 @@ const Footer = (props) => {
       <section
         ref={props.contactRef}
         id="contact"
-        className="footer-container normalFont lg:px-[180px]"
+        className="footer-container normalFont lg:px-[180px] 3xl:px-[280px]"
       >
         <div className="footer-first-div md:mx-4 md:flex justify-between">
           <div className="footer-heading lg:text-[70px]">

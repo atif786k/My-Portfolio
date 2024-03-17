@@ -1,8 +1,12 @@
+.project-card{
+  margin: 42px 4px 0px 4px;
+
+}
 .card {
-  margin-top: 42px;
+  /* margin-top: 42px; */
   position: relative;
-  width: 360px;
-  height: 230px;
+  min-width: 370px;
+  min-height: 240px;
   background-color: transparent;
   border-radius: 16px;
   display: flex;
@@ -11,6 +15,18 @@
   overflow: hidden;
   perspective: 1000px;
   transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@media (min-width: 1024px) {
+  .card{
+    max-width: 390px;
+    max-height: 260px;
+  }
+}
+@media (min-width: 1540px) {
+  .card{
+    max-width: 420px;
+    max-height: 280px;
+  }
 }
 
 .card img {
@@ -69,12 +85,12 @@ h2.view-duration {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: grey;
   font-size: 15px;
   font-weight: 500;
-  letter-spacing: -0.01rem;
-
-  text-transform: uppercase;
-  color: grey;
+  /* text-transform: capitalize; */
 }
 
 span.view-btn:hover {

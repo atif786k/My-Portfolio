@@ -15,14 +15,12 @@ import About from "../2_AboutPage/About";
 import Project from "../3_ProjectPage/Project";
 import Skills from "../4_SkillesPage/Skills";
 import Footer from "../5_FooterPage/Footer";
+import MagnetoButton from "../Magneto";
 
 import { gsap } from "gsap";
 
 const Home = () => {
   useEffect(() => {
-    // const marqueeName = document.querySelector(".marquee-name");
-    // const leftSideTitle = document.querySelector(".occupation-div");
-    // const mainNav = document.querySelector(".home-container-nav ul li");
     let tl = gsap.timeline({});
     gsap.from(".marquee-name , .occupation-div", {
       y: 250,
@@ -69,9 +67,14 @@ const Home = () => {
                 <BsCodeSlash className="mr-2" /> Atif
               </span>
             </h4>
-            <div className="btn-circle btn-border">
-              <IoClose onClick={closeNav} className="close-btn" />
-            </div>
+            <MagnetoButton
+              buttonClass="btn-circle"
+              buttonClass1="btn-border"
+              textClass="close-btn"
+              buttonText={<IoClose onClick={closeNav} className="close-btn" />}
+              x={25}
+              y={35}
+            />
           </div>
 
           <div className="menu-div w-[100%]">
@@ -128,7 +131,7 @@ const Home = () => {
       <section
         ref={home}
         id="home"
-        className="home-container normalFont md:bg-contain lg:px-[140px]"
+        className="home-container normalFont md:bg-contain lg:px-[140px] 3xl:px-[280px]"
       >
         <nav className="home-container-nav">
           <h4>
@@ -139,22 +142,51 @@ const Home = () => {
           </h4>
           <ul className="hidden space-x-6 md:flex">
             <li onClick={() => scrollToSection(about)}>
-              About
-              <p className="dot-animation"></p>
+              <MagnetoButton
+                buttonClass="about-btn-fakeClassName"
+                buttonClass1="about_type1-fakeClassName"
+                textClass="about-btn-span-fakeClassName"
+                buttonText={
+                  <>
+                    About <p className="dot-animation"></p>
+                  </>
+                }
+                x={35}
+                y={45}
+              />
             </li>
             <li onClick={() => scrollToSection(projects)}>
-              Projects<p className="dot-animation"></p>
+              <MagnetoButton
+                buttonClass="projects-btn-fakeClassName"
+                buttonClass1="projects_type1-fakeClassName"
+                textClass="projects-btn-span-fakeClassName"
+                buttonText={
+                  <>
+                    Projects <p className="dot-animation"></p>
+                  </>
+                }
+                x={35}
+                y={45}
+              />
             </li>
             <li onClick={() => scrollToSection(contact)}>
-              Contact<p className="dot-animation"></p>
+              <MagnetoButton
+                buttonClass="contact-btn-fakeClassName"
+                buttonClass1="contact_type1-fakeClassName"
+                textClass="contact-btn-span-fakeClassName"
+                buttonText={
+                  <>
+                    Contact <p className="dot-animation"></p>
+                  </>
+                }
+                x={35}
+                y={45}
+              />
             </li>
           </ul>
-          <p
-            onClick={toggleNav}
-            className="btn-circle btn-menu-fixed flex items-center justify-center md:hidden"
-          >
-            <RiMenu4Fill className="menu-btn" />
-          </p>
+          <div className="btn-circle btn-menu-fixed md:hidden">
+            <RiMenu4Fill onClick={toggleNav} className="menu-btn" />
+          </div>
         </nav>
 
         <div className="absolute bottom-8 lg:static">

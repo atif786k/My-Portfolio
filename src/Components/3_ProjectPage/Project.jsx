@@ -1,7 +1,7 @@
 import React from "react";
 import "../3_ProjectPage/Project.css";
 import ProjectCard from "./ProjectCard";
-import MagnetoButton from "../GSAP";
+import MagnetoButton from "../Magneto";
 
 const Project = (props) => {
   const ProjectDetails = [
@@ -54,7 +54,7 @@ const Project = (props) => {
       <section
         ref={props.projectsRef}
         id="projects"
-        className="project-container normalFont lg:px-[140px]"
+        className="project-container normalFont lg:px-[140px] 3xl:px-[280px]"
       >
         <h2 className="fancyFont">Projects</h2>
         <h3>latest ones</h3>
@@ -76,7 +76,11 @@ const Project = (props) => {
             buttonClass="project-btn"
             buttonClass1="type1"
             textClass="project-btn-span"
-            buttonText={`More Work`}
+            buttonText={
+              <>
+                More Work <sup className="animate-pulse">8</sup>
+              </>
+            }
             x={25}
             y={35}
           />

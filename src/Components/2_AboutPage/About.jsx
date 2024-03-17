@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "../2_AboutPage/About.css";
 import { Link } from "react-router-dom";
-import { gsap, Power4, Elastic } from "gsap";
+import { gsap, Power4} from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import MagnetoButton from "../GSAP";
+import MagnetoButton from "../Magneto";
 
 
 const About = (props) => {
@@ -80,17 +80,14 @@ const About = (props) => {
       <div
         ref={props.aboutRef}
         id="about"
-        className="about-container normalFont md:flex-row md:justify-evenly md:mt-[140px] md:flex lg:px-[180px]">
-        <p className="about-phrase md:w-[60%]">
+        className="about-container fancyFont md:flex-row md:justify-evenly md:mt-[140px] md:flex lg:px-[180px] 3xl:px-[280px]">
+        <p className="about-phrase normalFont md:w-[60%]">
           Innovative Web Developer and Software Developer with proven abilities
           in frontend tools and Data Structures and Algorithms (DSA). Can work
           in collaborative environments while staying focused on achieving
           high-quality results under strict deadlines.
         </p>
-        <Link to="/aboutdetailed" rel="">
-          {/* <button className="about-btn about_type1">
-            <span className="about-btn-span fancyFont">About me</span>
-          </button> */}
+        <Link to="/aboutdetailed" rel="" >
           <MagnetoButton
             buttonClass="about-btn"
             buttonClass1="about_type1"

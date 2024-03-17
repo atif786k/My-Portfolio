@@ -41,10 +41,10 @@ const Skills = () => {
     <>
       <section
         id="skills"
-        className="skills-container normalFont lg:px-[180px]"
+        className="skills-container normalFont  lg:px-[180px] 3xl:px-[280px]"
       >
         <h2 className="fancyFont">Tools</h2>
-        <div className="skills-div space-y-16 lg:flex-row lg:space-y-0">
+        <div className="skills-div md:grid-cols-2 xl:grid-cols-3">
           <div className="div-styling front-end relative lg:mx-2 xl:mx-[32px]">
             <h4 className="">Front-end</h4>
             <FaHtml5 className="icon-style" />

@@ -26,9 +26,6 @@
 .side-navigation h4 {
   width: 100%;
   font-size: 28px;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
   font-family: "Protest Guerrilla", sans-serif;
   text-transform: uppercase;
   color: #222831;
@@ -38,9 +35,9 @@
   position: relative;
   cursor: pointer;
 }
-.btn-menu-fixed{
+.btn-menu-fixed {
   position: fixed;
-  top: 32px;
+  top: 18px;
   right: 28px;
   z-index: 5;
 }
@@ -97,10 +94,6 @@ button.resume-btn:hover {
 .greetings-div h3 {
   font-weight: 400;
   line-height: 0%;
-  /* color: rgb(77, 201, 254); */
-  /* text-shadow: -4px 2px 0px black; */
-  /* -webkit-text-stroke: 2px white; */
-  /* letter-spacing: -0.1rem; */
 }
 
 .marquee-name h1 {
@@ -108,9 +101,6 @@ button.resume-btn:hover {
   white-space: nowrap;
   animation: marquee-animation 17000ms linear infinite;
   letter-spacing: -0.4rem;
-  /* color: #eeeeee; */
-  /* -webkit-text-stroke: 2px black; */
-  /* text-shadow: -6px 4px 0px black; */
 }
 
 @keyframes marquee-animation {
@@ -189,10 +179,10 @@ button.resume-btn:hover {
 .menu-items li:hover,
 .socialMedia-div ul li a:hover {
   color: #2ec4b6;
-  transition: all 0.6s ease-out;
+  transition: all 0.4s ease-out;
 }
 
-.initials-div{
+.initials-div {
   position: relative;
 }
 
@@ -207,9 +197,9 @@ button.resume-btn:hover {
   border: none;
   border-radius: 100%;
   box-shadow: inset 0 0 0 0 #2ec4b6;
-  transition: all 0.5s ease-in;
+  /* transition: all 0.5s ease-in; */
 }
-.btn-border{
+.btn-border {
   border: 1px solid grey;
 }
 .close-btn,
@@ -219,7 +209,7 @@ button.resume-btn:hover {
   border: none;
   cursor: pointer;
 }
-.btn-circle:hover{
+.btn-circle:hover {
   color: #eeeeee;
   border: none;
   box-shadow: inset 500px 0 0 0 #2ec4b6;

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap, Power4, Elastic } from "gsap";
 
-const MagnetoButton = ({
+const Magneto = ({
   buttonText,
   buttonClass,
   buttonClass1,
@@ -65,4 +65,4 @@ const MagnetoButton = ({
   );
 };
 
-export default MagnetoButton;
+export default Magneto;

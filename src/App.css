@@ -14,20 +14,10 @@
   font-style: normal;
 }
 
-.horizontal-line{
+.horizontal-line {
   border-color: rgb(211, 211, 211);
   border-radius: 100%;
 }
-
-/* gsap Learning  */
-.magneto {
-  display: inline-block;
-  height: 300px;
-  width: 300px;
-  background-color: orange;
-  margin: 200px 200px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+::-webkit-scrollbar {
+  width: 10px;
 }

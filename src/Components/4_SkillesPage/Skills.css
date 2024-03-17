@@ -14,11 +14,12 @@
   color: #222831;
 }
 .skills-div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: fit-content;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  column-gap: 2rem;
+  row-gap: 4rem;
 }
 .div-styling {
   height: 200px;

@@ -4,8 +4,9 @@ import "./About.css";
 import { BsStars, BsCodeSlash, BsArrowRight } from "react-icons/bs";
 import Footer from "../5_FooterPage/Footer";
 import { Link } from "react-router-dom";
-import { gsap, Power4, Elastic } from "gsap";
+import { gsap, Power4 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import MagnetoButton from "../Magneto";
 
 const AboutDetailed = () => {
   const contact = useRef(null);
@@ -32,9 +33,31 @@ const AboutDetailed = () => {
       rotate: 45,
       duration: 2,
     });
+    gsap.from(".section-info div", { y: 100, opacity: 0 });
+    gsap.to(".section-info div", {
+      scrollTrigger: {
+        trigger: ".section-info div",
+        start: "top 70%",
+        end: "top 40%",
+        scrub: 1,
+        // markers: true,
+      },
+      y: 0,
+      opacity: 1,
+      duration: 4,
+      ease: Power4.easeIn,
+    });
 
-    // useEffect(() => {
     let tl = gsap.timeline({});
+    gsap.from(".aboutDetailed-nav", {
+      y: -200,
+      opacity: 0,
+    });
+    tl.to(".aboutDetailed-nav", {
+      y: 0,
+      opacity: 1,
+      duration: 1.5,
+    });
     gsap.from(".detailed-section", {
       y: 300,
       opacity: 0,
@@ -42,7 +65,7 @@ const AboutDetailed = () => {
     tl.to(".detailed-section", {
       y: 0,
       opacity: 1,
-      duration: 1.5,
+      duration: 1,
     });
     gsap.from(".occupation-heading h1", {
       x: -500,
@@ -54,13 +77,12 @@ const AboutDetailed = () => {
       duration: 1.5,
       stagger: 0.8,
     });
-    // }, []);
   }, []);
 
   return (
     <>
       <div className="normalFont aboutDetailed-container">
-        <nav className="aboutDetailed-nav lg:px-[180px]">
+        <nav className="aboutDetailed-nav lg:px-[180px] 3xl:px-[280px]">
           <h4>
             <span className="flex items-center">
               <BsCodeSlash className="menu_icon mr-1" />
@@ -70,17 +92,38 @@ const AboutDetailed = () => {
           <ul className="space-x-6 flex">
             <Link to="/" rel="">
               <li>
-                Home
-                <p className="dot-animation bg-color"></p>
+                <MagnetoButton
+                  buttonClass="home-btn-fakeClassName"
+                  buttonClass1="home_type1-fakeClassName"
+                  textClass="home-btn-span-fakeClassName"
+                  buttonText={
+                    <>
+                      Home <p className="dot-animation bg-color"></p>
+                    </>
+                  }
+                  x={35}
+                  y={45}
+                />
               </li>
             </Link>
             <li onClick={() => scrollToSection(contact)}>
-              Contact<p className="dot-animation bg-color"></p>
+              <MagnetoButton
+                buttonClass="contact-btn-fakeClassName"
+                buttonClass1="contact_type1-fakeClassName"
+                textClass="contact-btn-span-fakeClassName"
+                buttonText={
+                  <>
+                    Contact <p className="dot-animation bg-color"></p>
+                  </>
+                }
+                x={35}
+                y={45}
+              />
             </li>
           </ul>
         </nav>
 
-        <div className="detailed-info lg:px-[180px]">
+        <div className="detailed-info lg:px-[180px] 3xl:px-[280px]">
           <p className="occupation-heading">
             <h1 className="heading-one">Designer</h1>
             <h1 className="heading-two">and</h1>
@@ -90,24 +133,27 @@ const AboutDetailed = () => {
 
         <hr className="horizontal-line lg:mx-[180px]" />
 
-        <div className="detailed-section lg:flex-row  lg:px-[180px]">
+        <div className="detailed-section lg:flex-row  lg:px-[180px] 3xl:px-[280px]">
           <div className="detailed-section-first space-y-8 lg:w-[50%] lg:pr-10">
             <BsArrowRight className="arrow text-3xl mb-4" />
 
             <p>
-              Hey there ! 👋 I'm Mohammad Atif, a passionate software developer
-              and a web developer with a love for crafting innovative solutions.
-              I thrive on turning complex problems into simple, elegant, and
-              intuitive software. Here's a bit about me ...
+              Hey Guys, Welcome to my portfolio, Myself Mohammad Atif a
+              passionate software developer and a web developer with a love for
+              crafting innovative solutions. I thrive on turning complex
+              problems into simple, elegant, and intuitive software. I have
+              build this portfolio to showcase my projects & skills and to show
+              how passionate i am towards developing things.
             </p>
             <p>
-              I hold a Btech degree in Computer Science and Engineering from
-              Integral University Lucknow. My journey into the world of
-              programming started during the lockdown period when whole world is
-              busy in fighting with corona virus and here I started developing
-              feelings for coding and developing stuffs during that time. Since
-              then, I've been on an exciting adventure of continuous learning
-              and growth.
+              <span className="block">Little bit about me...</span>I hold a
+              Btech degree in Computer Science and Engineering from Integral
+              University Lucknow. My journey into the world of programming
+              started during the lockdown period when whole world is busy in
+              fighting with corona virus and here I started developing feelings
+              for coding and developing stuffs during that time. Since then,
+              I've been on an exciting adventure of continuous learning and
+              growth.
             </p>
             <p>
               I'm always open to new opportunities, collaborations, and
