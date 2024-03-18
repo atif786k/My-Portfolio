@@ -7,10 +7,16 @@
 }
 
 .about-phrase {
-  font-size: 24px;
+  font-size: 1.55em;
   font-weight: 400;
   word-spacing: 2px;
-  line-height: 160%;
+  letter-spacing: -0.1rem;
+  /* line-height: 160%; */
+}
+@media (min-width: 1200px) {
+  .about-phrase {
+    font-size: 1.65em;
+  }
 }
 
 .about-btn {
@@ -74,7 +80,7 @@
 }
 .aboutDetailed-nav h4 {
   font-family: "Protest Guerrilla", sans-serif;
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .aboutDetailed-nav ul li {
@@ -107,15 +113,40 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  font-size: 18px;
 }
 .detailed-section-first {
+  font-size: 18px;
+  font-weight: 500;
   word-spacing: 4px;
-}
-
-.same-style {
   display: flex;
   flex-direction: column;
+  align-items: start;
+}
+.detailed-section-first p span {
+  display: block;
+  font-weight: 450;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  letter-spacing: -0.1rem;
+  transition: all 0.2s ease-in;
+}
+.detailed-section-first p span:hover {
+  color: #2ec4b6;
+}
+span.high {
+  font-size: 38px;
+}
+span.mid {
+  font-size: 32px;
+}
+.detailed-section-second {
+  border: 1px solid transparent;
+  border-radius: 32px;
+  overflow: hidden;
+}
+.detailed-section-second:hover img {
+  transform: scale(1.08);
+  transition: all 0.4s ease-in;
 }
 
 .section-info {
@@ -126,14 +157,19 @@
 
 .myEducation-section h2,
 .myServices-section h2 {
-  margin-top: 18px;
-  font-size: 36px;
+  margin-bottom: 12px;
+  font-size: 38px;
   font-weight: 500;
+}
+.same-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .same-style p h3 {
   padding: 6px 0px;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -158,3 +194,5 @@
     font-size: 120px;
   }
 }
+/* border-bottom-left-radius: 180% 50%; */
+/* border-bottom-right-radius: 180% 50%; */

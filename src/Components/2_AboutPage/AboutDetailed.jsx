@@ -25,10 +25,9 @@ const AboutDetailed = () => {
     gsap.to(".arrow", {
       scrollTrigger: {
         trigger: ".arrow",
-        start: "top 100%",
-        end: "top 80%",
+        start: "top 70%",
+        end: "top 50%",
         scrub: 2,
-        // markers: true,
       },
       rotate: 45,
       duration: 2,
@@ -133,29 +132,29 @@ const AboutDetailed = () => {
 
         <hr className="horizontal-line lg:mx-[180px]" />
 
-        <div className="detailed-section lg:flex-row  lg:px-[180px] 3xl:px-[280px]">
+        <div className="detailed-section paraFont lg:flex-row  lg:px-[180px] 3xl:px-[280px]">
           <div className="detailed-section-first space-y-8 lg:w-[50%] lg:pr-10">
             <BsArrowRight className="arrow text-3xl mb-4" />
 
             <p>
-              Hey Guys, Welcome to my portfolio, Myself Mohammad Atif a
-              passionate software developer and a web developer with a love for
-              crafting innovative solutions. I thrive on turning complex
-              problems into simple, elegant, and intuitive software. I have
-              build this portfolio to showcase my projects & skills and to show
-              how passionate i am towards developing things.
+              <span className="high">Welcome to my portfolio</span>
+              Myself Mohammad Atif a passionate software developer and a web
+              developer with a love for crafting innovative solutions. I thrive
+              on turning complex problems into simple, elegant, and intuitive
+              software. I have build this portfolio to showcase my projects &
+              skills and to show how passionate i am towards developing things.
             </p>
             <p>
-              <span className="block">Little bit about me...</span>I hold a
-              Btech degree in Computer Science and Engineering from Integral
-              University Lucknow. My journey into the world of programming
-              started during the lockdown period when whole world is busy in
-              fighting with corona virus and here I started developing feelings
-              for coding and developing stuffs during that time. Since then,
-              I've been on an exciting adventure of continuous learning and
-              growth.
+              <span className="mid">My journey</span>I hold a Btech degree in
+              Computer Science and Engineering from Integral University Lucknow.
+              My journey into the world of programming started during the
+              lockdown period when whole world is busy in fighting with corona
+              virus and here I started developing feelings for coding and
+              developing stuffs during that time. Since then, I've been on an
+              exciting adventure of continuous learning and growth.
             </p>
             <p>
+              <span className="mid">Wanna collab...!</span>
               I'm always open to new opportunities, collaborations, and
               discussions about all things tech. Feel free to reach out me
               through my Contact section if you'd like to chat about software
@@ -169,7 +168,7 @@ const AboutDetailed = () => {
           </div>
         </div>
 
-        <div className="section-info space-y-12">
+        <div className="section-info paraFont space-y-12 3xl:px-[280px]">
           <div className="myEducation-section ">
             <h2>Qualifications</h2>
             <div className="same-style space-y-8 lg:space-x-8 lg:space-y-0  lg:flex-row">
@@ -184,8 +183,8 @@ const AboutDetailed = () => {
                 <h3>Graduation</h3>
                 Currently I'm pursuing Btech in Computer Science & Engineering
                 from Integral University Lucknow, India
-                <span>CGPA : 8.4</span>
                 <span>Duration : 2020 - 2024</span>
+                <span>CGPA : 8.4</span>
               </p>
             </div>
           </div>

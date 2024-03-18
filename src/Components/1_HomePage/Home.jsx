@@ -20,6 +20,26 @@ import MagnetoButton from "../Magneto";
 import { gsap } from "gsap";
 
 const Home = () => {
+  const home = useRef(null);
+  const about = useRef(null);
+  const projects = useRef(null);
+  const contact = useRef(null);
+  const [isNavOpen, setNavOpen] = useState(false);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
+  const toggleNav = () => {
+    setNavOpen(!isNavOpen);
+  };
+  const closeNav = () => {
+    setNavOpen(false);
+  };
+
   useEffect(() => {
     let tl = gsap.timeline({});
     gsap.from(".marquee-name , .occupation-div", {
@@ -34,26 +54,6 @@ const Home = () => {
     });
   }, []);
 
-  const home = useRef(null);
-  const about = useRef(null);
-  const projects = useRef(null);
-  const contact = useRef(null);
-
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
-
-  const [isNavOpen, setNavOpen] = useState(false);
-
-  const toggleNav = () => {
-    setNavOpen(!isNavOpen);
-  };
-  const closeNav = () => {
-    setNavOpen(false);
-  };
   return (
     <>
       <div id="side-navigation-container">
@@ -184,9 +184,18 @@ const Home = () => {
               />
             </li>
           </ul>
-          <div className="btn-circle btn-menu-fixed md:hidden">
-            <RiMenu4Fill onClick={toggleNav} className="menu-btn" />
-          </div>
+          <MagnetoButton
+            buttonClass="btnCircle"
+            buttonClass1="btnMenuFixed"
+            textClass="menuBtn"
+            buttonText={
+              <div className="btn-circle btn-menu-fixed md:hidden">
+                <RiMenu4Fill onClick={toggleNav} className="menu-btn" />
+              </div>
+            }
+            x={25}
+            y={35}
+          />
         </nav>
 
         <div className="absolute bottom-8 lg:static">

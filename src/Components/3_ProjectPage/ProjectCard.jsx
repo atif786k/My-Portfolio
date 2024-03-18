@@ -15,27 +15,12 @@ const ProjectCard = (props) => {
         start: "top 85%",
         end: "bottom 60%",
         scrub: 1,
-
       },
       scale: 1,
       opacity: 1,
       duration: 1.5,
     });
-
-    // gsap.from(".view-duration", { y:-20, opacity: 0 });
-    // tl.to(".view-duration", {
-    //   scrollTrigger: {
-    //     trigger: ".view-duration",
-    //     start: "top 85%",
-    //     end: "bottom 60%",
-    //     scrub: 1,
-
-    //   },
-    //   y:0,
-    //   opacity: 1,
-    //   // duration: 1.5,
-    // });
-  }, [".#card1",{scale:0.8, opacity:0}]);
+  }, [".#card1", { scale: 0.8, opacity: 0 }]);
   return (
     <>
       <section className="project-card">
