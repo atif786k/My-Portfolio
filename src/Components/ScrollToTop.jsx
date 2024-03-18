@@ -8,7 +8,7 @@ const ScrollToTop = () => {
     window.scrollTo(0, 0);
 
     // Scroll to top on component mount (page load)
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, [pathname]);
 };
 
