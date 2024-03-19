@@ -58,21 +58,20 @@ const About = (props) => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from(".about-phrase", { y: 150, opacity: 0 });
+    gsap.set(".about-phrase", { y: 150, opacity: 0 });
     gsap.to(".about-phrase", {
       scrollTrigger: {
         trigger: ".about-phrase",
         start: "top 100%",
         end: "bottom 40%",
-        scrub: 2,
+        scrub: true,
       },
-      x: 0,
       y: 0,
       opacity: 1,
       duration: 1.5,
       ease: Power4.easeOut,
     });
-  }, [".about-phrase", { y: 150, opacity: 0 }]);
+  }, []);
 
   return (
     <>

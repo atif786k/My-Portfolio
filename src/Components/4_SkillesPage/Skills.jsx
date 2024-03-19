@@ -24,19 +24,19 @@ const Skills = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from(".div-styling", { y: 100, opacity: 0 });
+    gsap.set(".div-styling", { y: 100, opacity: 0 });
     gsap.to(".div-styling", {
       scrollTrigger: {
         trigger: ".div-styling",
         start: "top 100%",
         end: "bottom 90%",
-        scrub: 1,
+        scrub: true,
       },
       y: 0,
       opacity: 1,
       duration: 1.5,
     });
-  }, [".div-styling", { y: 100, opacity: 0 }]);
+  }, []);
   return (
     <>
       <section

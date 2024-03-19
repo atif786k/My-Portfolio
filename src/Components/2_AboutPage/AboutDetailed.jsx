@@ -164,7 +164,7 @@ const AboutDetailed = () => {
           </div>
 
           <div className="detailed-section-second mt-10 lg:mt-0 lg:w-[50%]">
-            <img src="./bg_remove/img5.jpg" alt="" />
+            <img src="./myPhotos/img5.jpg" alt="" />
           </div>
         </div>
 
