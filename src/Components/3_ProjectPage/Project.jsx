@@ -31,7 +31,7 @@ const Project = (props) => {
     {
       projNo: "04",
       projName: "Myntra Clone",
-      imageURL: "projectImages/noImage.png",
+      imageURL: "projectImages/myntraClone.png",
       wrokingYear: "2022",
       description:
         "I have tried my best to clone the front-end part of the myntra landing-page with HMTL, CSS and JS only",
