@@ -25,10 +25,10 @@ const ProjectCard = (props) => {
       <section className="project-card">
         <div id="card1" className="card normalFont">
           <img src={props.image} alt="" />
-          <div className="card-content">
+          {/* <div className="card-content">
             <p className="card-title">{props.name}</p>
             <p className="card-description">{props.description}</p>
-          </div>
+          </div> */}
         </div>
         <h1 className="projects-heading">{props.name}</h1>
         <hr className="horizontal-line" />

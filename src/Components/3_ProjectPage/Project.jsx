@@ -59,11 +59,11 @@ const Project = (props) => {
       <section
         ref={props.projectsRef}
         id="projects"
-        className="project-container normalFont lg:px-[140px] 3xl:px-[280px]"
+        className="project-container normalFont lg:px-[90px] 3xl:px-[200px]"
       >
         <h2 className="fancyFont">Projects</h2>
         <h3>latest ones</h3>
-        <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
           {ProjectDetails.map((e) => {
             return (
               <div id="card-container" key={e.projNo}>
