@@ -28,7 +28,6 @@ const AboutDetailed = () => {
         start: "top 70%",
         end: "top 50%",
         scrub: 2,
-        markers:true
       },
       rotate: 45,
       duration: 2,
