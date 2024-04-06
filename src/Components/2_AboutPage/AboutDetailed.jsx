@@ -21,18 +21,19 @@ const AboutDetailed = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from(".arrow", { rotate: 0 });
+    gsap.set(".arrow", { rotate: 0 });
     gsap.to(".arrow", {
       scrollTrigger: {
         trigger: ".arrow",
         start: "top 70%",
         end: "top 50%",
         scrub: 2,
+        markers:true
       },
       rotate: 45,
       duration: 2,
     });
-    gsap.from(".section-info div", { y: 100, opacity: 0 });
+    gsap.set(".section-info div", { y: 100, opacity: 0 });
     gsap.to(".section-info div", {
       scrollTrigger: {
         trigger: ".section-info div",
@@ -48,7 +49,7 @@ const AboutDetailed = () => {
     });
 
     let tl = gsap.timeline({});
-    gsap.from(".aboutDetailed-nav", {
+    gsap.set(".aboutDetailed-nav", {
       y: -200,
       opacity: 0,
     });
@@ -57,7 +58,7 @@ const AboutDetailed = () => {
       opacity: 1,
       duration: 1.5,
     });
-    gsap.from(".detailed-section", {
+    gsap.set(".detailed-section", {
       y: 300,
       opacity: 0,
     });
@@ -66,7 +67,7 @@ const AboutDetailed = () => {
       opacity: 1,
       duration: 1,
     });
-    gsap.from(".occupation-heading h1", {
+    gsap.set(".occupation-heading h1", {
       x: -500,
       opacity: 0,
     });
