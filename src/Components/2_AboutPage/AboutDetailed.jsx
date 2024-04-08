@@ -62,7 +62,7 @@ const AboutDetailed = () => {
       y: 0,
     });
     tl.to(".loading-container", {
-      y: -950,
+      y: -1000,
       duration: 1,
       delay: 1.5,
     });

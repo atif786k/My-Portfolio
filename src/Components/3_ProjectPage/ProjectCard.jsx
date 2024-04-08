@@ -22,7 +22,7 @@ const ProjectCard = (props) => {
   }, []);
   return (
     <>
-      <section className="project-card">
+      <section className="project-card paraFont">
         <div id="card1" className="card normalFont">
           <img src={props.image} alt="" />
           {/* <div className="card-content">

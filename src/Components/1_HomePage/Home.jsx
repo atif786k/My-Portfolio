@@ -56,7 +56,7 @@ const Home = () => {
       y: 0,
     });
     tl.to(".loading-container", {
-      y: -800,
+      y: -1000,
       duration: 1,
       delay: 1.5,
     });
@@ -76,7 +76,7 @@ const Home = () => {
     <>
       <div id="side-navigation-container">
         <div className={`side-navigation ${isNavOpen ? "open" : ""} fancyFont`}>
-          <div className="initials-div flex items-center justify-between w-[100%]">
+          <div className="initials-div w-[100%]">
             <h4>
               <span
                 onClick={() => scrollToSection(home)}
