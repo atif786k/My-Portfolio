@@ -10,47 +10,48 @@ const Project = (props) => {
       projName: "Fresh Feeds",
       imageURL: "projectImages/freshFeeds.png",
       wrokingYear: "2023",
-      description:
-        "This is a news website project. The goal is to create a dynamic platform that easily brings together news articles from various global sources. The main focus is on quickly delivering these articles to users in an optimal and engaging way.",
+      url:"https://fresh-feeds.netlify.app/",
+      stack:["React ", "Tailwindcss ", "RapidAPI ", "G-News-API"]
     },
     {
       projNo: "02",
       projName: "Quiz Nest",
       imageURL: "projectImages/quizWeb.png",
       wrokingYear: "2023",
-      description:
-        "This is a dynamic Quiz web application with strong form validation. Users can participate in the quiz by logging in or signing up. The quiz includes a carefully selected set of questions, and users earn credit scores for correct answers. Your earned credit score is then displayed at the end of the quiz, showcasing your achievement. The platform seamlessly combines the interactive quiz experience with secure authentication mechanisms",
+      url:"",
+      stack:["React ", "Tailwindcss ", "Firebase-Authentication"]
     },
     {
       projNo: "03",
       projName: "Study Sync",
       imageURL: "projectImages/studySync.png",
       wrokingYear: "2023-24",
-      description: "",
+      url:"https://atifolio.netlify.app/",
+      stack:["React ", "Tailwindcss ", "Firebase-Authentication"]
     },
     {
       projNo: "04",
       projName: "Myntra Clone",
       imageURL: "projectImages/myntraClone.png",
       wrokingYear: "2022",
-      description:
-        "I have tried my best to clone the front-end part of the myntra landing-page with HMTL, CSS and JS only",
+      url:"https://myntra-page.netlify.app/",
+      stack:["HTML5 ", "CSS3 ", "JS"]
     },
     {
       projNo: "05",
       projName: "Bill Splitter",
       imageURL: "projectImages/noImage.png",
       wrokingYear: "2022",
-      description:
-        "It is a bill splitter which is a user-friendly web application designed to assist users in splitting bills among a group of individuals easily and efficiently. Utilizing HTML and CSS, this application provides a seamless and intuitive interface for users to input bill details, such as the total amount, number of individuals, and the items they are splitting. ",
+      url:"",
+      stack:["HTML5 ", "CSS3 ", "JS"]
     },
     {
       projNo: "06",
       projName: "Atifolio",
-      imageURL: "projectImages/noImage.png",
+      imageURL: "projectImages/folio1.png",
       wrokingYear: "2024",
-      description:
-        "It's my personal portfolio designed and developed by me to showcase my skills and various projects that i have worked on since the beginning of this journey",
+      url:"https://atifolio.netlify.app/",
+      stack:["React ", "Tailwindcss ", "GSAP"]
     },
   ];
 
@@ -71,7 +72,8 @@ const Project = (props) => {
                   image={e.imageURL}
                   name={e.projName}
                   year={e.wrokingYear}
-                  description={e.description}
+                  URL={e.url}
+                  stack={e.stack}
                 />
               </div>
             );

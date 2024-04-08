@@ -16,6 +16,7 @@ import {
   SiMongodb,
   SiMysql,
   SiNodedotjs,
+  SiExpress
 } from "react-icons/si";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -60,6 +61,7 @@ const Skills = () => {
             <SiFirebase className="icon-style" />
             <SiNextdotjs className="icon-style" />
             <SiNodedotjs className="icon-style" />
+            <SiExpress className="icon-style" />
             <SiMongodb className="icon-style" />
             <SiMysql className="icon-style" />
           </div>

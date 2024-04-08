@@ -42,8 +42,26 @@ const Home = () => {
 
   useEffect(() => {
     let tl = gsap.timeline({});
+    gsap.set(".nav-title", {
+      y: 100,
+      opacity: 0,
+    });
+    tl.to(".nav-title", {
+      y: 0,
+      opacity: 1,
+      duration: 2,
+    });
+
+    gsap.set(".loading-container", {
+      y: 0,
+    });
+    tl.to(".loading-container", {
+      y: -800,
+      duration: 1,
+      delay: 1.5,
+    });
     gsap.from(".marquee-name , .occupation-div", {
-      y: 250,
+      y: 400,
       opacity: 0,
     });
     tl.to(".marquee-name , .occupation-div", {
@@ -127,7 +145,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      <div className="loading-container">
+        <h3 className="urdu-text">عسسلم عليكم</h3>
+        <h2 className="bg-text">Hello</h2>
+        <h2 className="nav-title">Home</h2>
+      </div>
       <section
         ref={home}
         id="home"

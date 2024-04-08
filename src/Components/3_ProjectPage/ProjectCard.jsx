@@ -30,14 +30,17 @@ const ProjectCard = (props) => {
             <p className="card-description">{props.description}</p>
           </div> */}
         </div>
-        <h1 className="projects-heading">{props.name}</h1>
+        <div className="upper-div">
+          <h1>{props.name}</h1>
+          <h1>{props.year}</h1>
+        </div>
         <hr className="horizontal-line" />
-        <h2 className="view-duration">
-          <span className="view-btn">
-            <FaPlay />
-          </span>
-          <span>{props.year}</span>
-        </h2>
+        <div className="lower-div">
+          <a href={props.URL} target="_blank">
+            <FaPlay className="view" />
+          </a>
+          <span>{props.stack}</span>
+        </div>
       </section>
     </>
   );

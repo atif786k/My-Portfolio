@@ -109,18 +109,28 @@
 }
 
 .detailed-section {
+  width: 100%;
   padding: 96px 28px 64px 28px;
   display: flex;
   flex-direction: column;
   align-items: start;
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  top: 40px;
 }
 .detailed-section-first {
-  font-size: 18px;
-  font-weight: 500;
   word-spacing: 4px;
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+.detailed-section-first p {
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
 }
 .detailed-section-first p span {
   display: block;
@@ -130,23 +140,14 @@
   letter-spacing: -0.1rem;
   transition: all 0.2s ease-in;
 }
-.detailed-section-first p span:hover {
-  color: #2ec4b6;
-}
 span.high {
+  margin-bottom: 18px;
   font-size: 38px;
-}
-span.mid {
-  font-size: 32px;
+  line-height: 40px;
 }
 .detailed-section-second {
   border: 1px solid transparent;
-  border-radius: 32px;
   overflow: hidden;
-}
-.detailed-section-second:hover img {
-  transform: scale(1.08);
-  transition: all 0.4s ease-in;
 }
 
 .section-info {
@@ -154,12 +155,26 @@ span.mid {
   padding: 32px 28px;
   background-color: #eeeeee;
 }
+.myEducation-section,
+.myServices-section {
+  position: relative;
+  padding: 32px 0px;
+}
 
 .myEducation-section h2,
 .myServices-section h2 {
   margin-bottom: 12px;
   font-size: 38px;
   font-weight: 500;
+}
+.bg-num {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  font-size: 80px;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+  opacity: 0.1;
 }
 .same-style {
   display: flex;
@@ -177,7 +192,18 @@ span.mid {
 .same-style p {
   display: flex;
   flex-direction: column;
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .detailed-section-first p {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .bg-num {
+    top: -100px;
+    font-size: 240px;
+  }
 }
 @media (min-width: 1024px) {
   .section-info {

@@ -48,6 +48,25 @@ const AboutDetailed = () => {
     });
 
     let tl = gsap.timeline({});
+    gsap.set(".nav-title", {
+      y: 100,
+      opacity: 0,
+    });
+    tl.to(".nav-title", {
+      y: 0,
+      opacity: 1,
+      duration: 2,
+    });
+
+    gsap.set(".loading-container", {
+      y: 0,
+    });
+    tl.to(".loading-container", {
+      y: -950,
+      duration: 1,
+      delay: 1.5,
+    });
+
     gsap.set(".aboutDetailed-nav", {
       y: -200,
       opacity: 0,
@@ -80,6 +99,11 @@ const AboutDetailed = () => {
 
   return (
     <>
+      <div className="loading-container">
+        <h3 className="urdu-text">عسسلم عليكم</h3>
+        <h2 className="bg-text">Hello</h2>
+        <h2 className="nav-title">About</h2>
+      </div>
       <div className="normalFont aboutDetailed-container">
         <nav className="aboutDetailed-nav lg:px-[180px] 3xl:px-[280px]">
           <h4>
@@ -133,44 +157,39 @@ const AboutDetailed = () => {
         <hr className="horizontal-line lg:mx-[180px]" />
 
         <div className="detailed-section paraFont lg:flex-row  lg:px-[180px] 3xl:px-[280px]">
-          <div className="detailed-section-first space-y-8 lg:w-[50%] lg:pr-10">
+          <div className="detailed-section-first lg:w-[50%] lg:pr-10">
             <BsArrowRight className="arrow text-3xl mb-4" />
 
             <p>
-              <span className="high">Welcome to my portfolio</span>
+              <span className="high normalFont">Welcome to my portfolio</span>
               Myself Mohammad Atif a passionate software developer and a web
-              developer with a love for crafting innovative solutions. I thrive
-              on turning complex problems into simple, elegant, and intuitive
-              software. I have build this portfolio to showcase my projects &
+              developer. I have build this portfolio to showcase my projects &
               skills and to show how passionate i am towards developing things.
             </p>
             <p>
-              <span className="mid">My journey</span>I hold a Btech degree in
-              Computer Science and Engineering from Integral University Lucknow.
-              My journey into the world of programming started during the
-              lockdown period when whole world is busy in fighting with corona
-              virus and here I started developing feelings for coding and
-              developing stuffs during that time. Since then, I've been on an
-              exciting adventure of continuous learning and growth.
+              I hold a Btech degree in CSE from Integral University Lucknow. My
+              journey into the world of programming started during the lockdown
+              period when whole world is busy in fighting with corona virus and
+              here I started developing feelings for coding. Since then, I've
+              been on an exciting adventure of continuous learning and growth.
             </p>
             <p>
-              <span className="mid">Wanna collab...!</span>
               I'm always open to new opportunities, collaborations, and
               discussions about all things tech. Feel free to reach out me
-              through my Contact section if you'd like to chat about software
-              development, share ideas, or explore potential projects together.
+              through my Contact section.
             </p>
             <p>Let's build something cool & amazing !</p>
           </div>
 
           <div className="detailed-section-second mt-10 lg:mt-0 lg:w-[50%]">
-            <img src="./myPhotos/img5.jpg" alt="" />
+            <img src="./myPhotos/IMG_1211.png" alt="" />
           </div>
         </div>
 
         <div className="section-info paraFont space-y-12 3xl:px-[280px]">
-          <div className="myEducation-section ">
+          <div className="myEducation-section">
             <h2>Qualifications</h2>
+            <h4 className="bg-num">O1</h4>
             <div className="same-style space-y-8 lg:space-x-8 lg:space-y-0  lg:flex-row">
               <p>
                 <hr className="horizontal-line my-6" />
@@ -191,6 +210,8 @@ const AboutDetailed = () => {
 
           <div className="myServices-section">
             <h2>How can i help you ...</h2>
+            <h4 className="bg-num">O2</h4>
+
             <div className="same-style space-y-8 lg:space-x-8 lg:space-y-0 lg:flex-row">
               <p>
                 <hr className="horizontal-line my-6" />
