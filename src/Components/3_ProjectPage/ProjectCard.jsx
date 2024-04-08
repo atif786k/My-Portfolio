@@ -36,10 +36,10 @@ const ProjectCard = (props) => {
         </div>
         <hr className="horizontal-line" />
         <div className="lower-div">
+          <span>{props.services}</span>
           <a href={props.URL} target="_blank">
             <FaPlay className="view" />
           </a>
-          <span>{props.stack}</span>
         </div>
       </section>
     </>

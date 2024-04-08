@@ -60,15 +60,15 @@ const Home = () => {
       duration: 1,
       delay: 1.5,
     });
-    gsap.from(".marquee-name , .occupation-div", {
-      y: 400,
+
+    gsap.set(".marquee-name , .occupation-div", {
+      y: 300,
       opacity: 0,
     });
     tl.to(".marquee-name , .occupation-div", {
-      x: 0,
       y: 0,
       opacity: 1,
-      duration: 1.5,
+      duration: 1,
     });
   }, []);
 

@@ -11,7 +11,7 @@ const Project = (props) => {
       imageURL: "projectImages/freshFeeds.png",
       wrokingYear: "2023",
       url:"https://fresh-feeds.netlify.app/",
-      stack:["React ", "Tailwindcss ", "RapidAPI ", "G-News-API"]
+      service:"Designed & Developed"
     },
     {
       projNo: "02",
@@ -19,7 +19,7 @@ const Project = (props) => {
       imageURL: "projectImages/quizWeb.png",
       wrokingYear: "2023",
       url:"",
-      stack:["React ", "Tailwindcss ", "Firebase-Authentication"]
+      service:"Designed & Developed"
     },
     {
       projNo: "03",
@@ -27,7 +27,7 @@ const Project = (props) => {
       imageURL: "projectImages/studySync.png",
       wrokingYear: "2023-24",
       url:"https://atifolio.netlify.app/",
-      stack:["React ", "Tailwindcss ", "Firebase-Authentication"]
+      service:"Designed & Developed"
     },
     {
       projNo: "04",
@@ -35,7 +35,7 @@ const Project = (props) => {
       imageURL: "projectImages/myntraClone.png",
       wrokingYear: "2022",
       url:"https://myntra-page.netlify.app/",
-      stack:["HTML5 ", "CSS3 ", "JS"]
+      service:"Developed"
     },
     {
       projNo: "05",
@@ -43,7 +43,7 @@ const Project = (props) => {
       imageURL: "projectImages/noImage.png",
       wrokingYear: "2022",
       url:"",
-      stack:["HTML5 ", "CSS3 ", "JS"]
+      service:"Developed"
     },
     {
       projNo: "06",
@@ -51,7 +51,7 @@ const Project = (props) => {
       imageURL: "projectImages/folio1.png",
       wrokingYear: "2024",
       url:"https://atifolio.netlify.app/",
-      stack:["React ", "Tailwindcss ", "GSAP"]
+      service:"Designed & Developed"
     },
   ];
 
@@ -73,7 +73,7 @@ const Project = (props) => {
                   name={e.projName}
                   year={e.wrokingYear}
                   URL={e.url}
-                  stack={e.stack}
+                  services={e.service}
                 />
               </div>
             );
