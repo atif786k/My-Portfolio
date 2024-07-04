@@ -240,7 +240,7 @@ const Home = () => {
             <BsArrowDownRight className="text-3xl mb-4" />
             <div className="occupation-div-containt">
               <button className="resume-btn">
-                <a href="/Mohammad_Atif_Resume.pdf" target="_blank">
+                <a href="/Atif_Resume.pdf" target="_blank">
                   Resume
                 </a>
               </button>
