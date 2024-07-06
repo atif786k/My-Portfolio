@@ -39,16 +39,16 @@ const Project = (props) => {
     },
     {
       projNo: "05",
-      projName: "Bill Splitter",
-      imageURL: "projectImages/noImage.png",
-      wrokingYear: "2022",
+      projName: "Store Pad",
+      imageURL: "projectImages/storePad.png",
+      wrokingYear: "2024",
       url:"",
       service:"Developed"
     },
     {
       projNo: "06",
       projName: "Atifolio",
-      imageURL: "projectImages/folio1.png",
+      imageURL: "projectImages/folio.png",
       wrokingYear: "2024",
       url:"https://atifolio.netlify.app/",
       service:"Designed & Developed"
