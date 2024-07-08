@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "../3_ProjectPage/ProjectCard.css";
-import { FaPlay } from "react-icons/fa6";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -22,26 +21,20 @@ const ProjectCard = (props) => {
   }, []);
   return (
     <>
-      <section className="project-card paraFont">
-        <div id="card1" className="card normalFont">
-          <img src={props.image} alt="" />
-          {/* <div className="card-content">
-            <p className="card-title">{props.name}</p>
-            <p className="card-description">{props.description}</p>
-          </div> */}
-        </div>
-        <div className="upper-div">
-          <h1>{props.name}</h1>
-          <h1>{props.year}</h1>
-        </div>
-        <hr className="horizontal-line" />
-        <div className="lower-div">
-          <span>{props.services}</span>
+      <div id="card1" className="project-card1">
+        <figure id="card1" className="project-img-container">
           <a href={props.URL} target="_blank">
-            <FaPlay className="view" />
+            <img src={props.image} alt="" />
           </a>
+        </figure>
+        <div className="project-title paraFont">
+          <h1>{props.name}</h1>
+          <h4>{props.year}</h4>
         </div>
-      </section>
+        <div className="project-detailed-container paraFont">
+          <h4>{props.techStacks}</h4>
+        </div>
+      </div>
     </>
   );
 };

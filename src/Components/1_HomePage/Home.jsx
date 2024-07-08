@@ -26,18 +26,18 @@ const Home = () => {
   const contact = useRef(null);
   const [isNavOpen, setNavOpen] = useState(false);
 
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
-
   const toggleNav = () => {
     setNavOpen(!isNavOpen);
   };
   const closeNav = () => {
     setNavOpen(false);
+  };
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+    closeNav();
   };
 
   useEffect(() => {

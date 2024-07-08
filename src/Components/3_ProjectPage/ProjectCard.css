@@ -91,7 +91,7 @@
   /* border: 1px solid #222831; */
   /* border-radius: 28px; */
 }
-.lower-div a {
+/* .lower-div a {
   cursor: pointer;
   color: grey;
 }
@@ -99,4 +99,44 @@
   transform: scale(1.2);
   transition: all 0.2s ease-in;
   color: #222831;
+} */
+
+/* New Card Styling */
+.project-card1 {
+  min-width: 200px;
+  margin: 42px 6px 0px 6px;
+}
+.project-img-container {
+  min-height: fit-content;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.project-img-container img {
+  transform: scale(1.01);
+  transition: all ease-in 0.2s;
+}
+.project-img-container:hover img{
+ transform: scale(1.06); 
+}
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-title h1 {
+  padding: 18px 0px 12px 4px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.08rem;
+}
+.project-title h4,
+.project-detailed-container h4 {
+  padding: 0px 4px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.project-detailed-container {
+  text-align: start;
 }

@@ -67,15 +67,15 @@ const AboutDetailed = () => {
       delay: 1.5,
     });
 
-    gsap.set(".aboutDetailed-nav", {
-      y: -200,
-      opacity: 0,
-    });
-    tl.to(".aboutDetailed-nav", {
-      y: 0,
-      opacity: 1,
-      duration: 1.5,
-    });
+    // gsap.set(".aboutDetailed-nav", {
+    //   y: -200,
+    //   opacity: 0,
+    // });
+    // tl.to(".aboutDetailed-nav", {
+    //   y: 0,
+    //   opacity: 1,
+    //   duration: 1.5,
+    // });
     gsap.set(".detailed-section", {
       y: 300,
       opacity: 0,
@@ -200,10 +200,10 @@ const AboutDetailed = () => {
               <p>
                 <hr className="horizontal-line my-6" />
                 <h3>Graduation</h3>
-                Currently I'm pursuing Btech in Computer Science & Engineering
-                from Integral University Lucknow, India
+                Recently i have completed my Bachelors degree in Btech Computer
+                Science & Engineering from Integral University Lucknow, India
                 <span>Duration : 2020 - 2024</span>
-                <span>CGPA : 8.4</span>
+                <span>CGPA : 8.2</span>
               </p>
             </div>
           </div>

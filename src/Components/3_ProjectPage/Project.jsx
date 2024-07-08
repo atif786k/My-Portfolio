@@ -10,48 +10,49 @@ const Project = (props) => {
       projName: "Fresh Feeds",
       imageURL: "projectImages/freshFeeds.png",
       wrokingYear: "2023",
-      url:"https://fresh-feeds.netlify.app/",
-      service:"Designed & Developed"
+      url: "https://fresh-feeds.netlify.app/",
+      techStack: "React, Tailwindcss, RapidAPI",
     },
     {
       projNo: "02",
-      projName: "Quiz Nest",
-      imageURL: "projectImages/quizWeb.png",
-      wrokingYear: "2023",
-      url:"",
-      service:"Designed & Developed"
-    },
-    {
-      projNo: "03",
       projName: "Study Sync",
       imageURL: "projectImages/studySync.png",
       wrokingYear: "2023-24",
-      url:"https://atifolio.netlify.app/",
-      service:"Designed & Developed"
+      url: "https://atifolio.netlify.app/",
+      techStack: "BotPress Studio, Firebase, React, Tailwindcss",
     },
+    {
+      projNo: "03",
+      projName: "Quiz Nest",
+      imageURL: "projectImages/quizWeb.png",
+      wrokingYear: "2023",
+      url: "",
+      techStack: "Firebase Authentication, React, JavaScript",
+    },
+    
     {
       projNo: "04",
       projName: "Myntra Clone",
       imageURL: "projectImages/myntraClone.png",
       wrokingYear: "2022",
-      url:"https://myntra-page.netlify.app/",
-      service:"Developed"
+      url: "https://myntra-page.netlify.app/",
+      techStack: "HTML5, CSS, JavaScript",
     },
     {
       projNo: "05",
       projName: "Store Pad",
       imageURL: "projectImages/storePad.png",
       wrokingYear: "2024",
-      url:"",
-      service:"Developed"
+      url: "",
+      techStack: "MongoDB, ExpressJS, React, NodeJS, PassportJS",
     },
     {
       projNo: "06",
       projName: "Atifolio",
       imageURL: "projectImages/folio.png",
       wrokingYear: "2024",
-      url:"https://atifolio.netlify.app/",
-      service:"Designed & Developed"
+      url: "https://atifolio.netlify.app/",
+      techStack: "GSAP, CSS3, React, JavaScript",
     },
   ];
 
@@ -62,9 +63,9 @@ const Project = (props) => {
         id="projects"
         className="project-container normalFont lg:px-[90px] 3xl:px-[200px]"
       >
-        <h2 className="fancyFont">Projects</h2>
+        <h2 className="paraFont">Projects</h2>
         <h3>latest ones</h3>
-        <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+        <div className="grid justify-items-center grid-cols-1 md:grid-cols-2 xl:grid-cols- gap-5">
           {ProjectDetails.map((e) => {
             return (
               <div id="card-container" key={e.projNo}>
@@ -73,7 +74,7 @@ const Project = (props) => {
                   name={e.projName}
                   year={e.wrokingYear}
                   URL={e.url}
-                  services={e.service}
+                  techStacks={e.techStack}
                 />
               </div>
             );
