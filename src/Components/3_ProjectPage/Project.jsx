@@ -16,7 +16,7 @@ const Project = (props) => {
     {
       projNo: "02",
       projName: "Study Sync",
-      imageURL: "projectImages/studySync.png",
+      imageURL: "projectImages/studySync1.png",
       wrokingYear: "2023-24",
       url: "https://atifolio.netlify.app/",
       techStack: "BotPress Studio, Firebase, React, Tailwindcss",
@@ -24,24 +24,24 @@ const Project = (props) => {
     {
       projNo: "03",
       projName: "Quiz Nest",
-      imageURL: "projectImages/quizWeb.png",
+      imageURL: "projectImages/quizWeb1.png",
       wrokingYear: "2023",
-      url: "",
+      url: "https://quiz-nest.netlify.app",
       techStack: "Firebase Authentication, React, JavaScript",
     },
     
     {
       projNo: "04",
       projName: "Myntra Clone",
-      imageURL: "projectImages/myntraClone.png",
+      imageURL: "projectImages/myntraClone1.png",
       wrokingYear: "2022",
-      url: "https://myntra-page.netlify.app/",
+      url: "https://myntra-cloned.netlify.app/",
       techStack: "HTML5, CSS, JavaScript",
     },
     {
       projNo: "05",
       projName: "Store Pad",
-      imageURL: "projectImages/storePad.png",
+      imageURL: "projectImages/storePad1.png",
       wrokingYear: "2024",
       url: "",
       techStack: "MongoDB, ExpressJS, React, NodeJS, PassportJS",
@@ -49,7 +49,7 @@ const Project = (props) => {
     {
       projNo: "06",
       projName: "Atifolio",
-      imageURL: "projectImages/folio.png",
+      imageURL: "projectImages/folio1.png",
       wrokingYear: "2024",
       url: "https://atifolio.netlify.app/",
       techStack: "GSAP, CSS3, React, JavaScript",
