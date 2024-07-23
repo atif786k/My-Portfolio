@@ -81,12 +81,9 @@ const About = (props) => {
         className="about-container fancyFont md:flex-row md:justify-evenly md:mt-[140px] md:flex lg:px-[180px] 3xl:px-[280px]"
       >
         <p className="about-phrase paraFont md:w-[60%]">
-          Innovative Web Developer and Software Developer with proven abilities
-          in frontend tools and Data Structures and Algorithms (DSA). Can work
-          in collaborative environments while staying focused on achieving
-          high-quality results under strict deadlines.
+          Innovative Web Developer and Software Developer with proven abilities in both frontend and backend tools, as well as in Data Structures and Algorithms (DSA). Capable of working in collaborative environments while staying focused on achieving high-quality results under strict deadlines.
         </p>
-        <Link to="/aboutdetailed" rel="">
+        <Link to="/aboutdetailed" rel="" className="">
           <MagnetoButton
             buttonClass="about-btn"
             buttonClass1="about_type1"

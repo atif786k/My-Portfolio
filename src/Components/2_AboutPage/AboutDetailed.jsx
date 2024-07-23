@@ -49,13 +49,13 @@ const AboutDetailed = () => {
 
     let tl = gsap.timeline({});
     gsap.set(".nav-title", {
-      y: 100,
+      y: 40,
       opacity: 0,
     });
     tl.to(".nav-title", {
       y: 0,
       opacity: 1,
-      duration: 2,
+      duration: 1,
     });
 
     gsap.set(".loading-container", {
@@ -63,19 +63,9 @@ const AboutDetailed = () => {
     });
     tl.to(".loading-container", {
       y: -1000,
-      duration: 1,
-      delay: 1.5,
+      duration: 0.8,
+      delay: 1,
     });
-
-    // gsap.set(".aboutDetailed-nav", {
-    //   y: -200,
-    //   opacity: 0,
-    // });
-    // tl.to(".aboutDetailed-nav", {
-    //   y: 0,
-    //   opacity: 1,
-    //   duration: 1.5,
-    // });
     gsap.set(".detailed-section", {
       y: 300,
       opacity: 0,
@@ -161,24 +151,37 @@ const AboutDetailed = () => {
             <BsArrowRight className="arrow text-3xl mb-4" />
 
             <p>
-              <span className="high normalFont">Welcome to my portfolio</span>
-              Myself Mohammad Atif a passionate software developer and a web
-              developer. I have build this portfolio to showcase my projects &
-              skills and to show how passionate i am towards developing things.
+              <span className="high normalFont">Hi, I'm Mohammad Atif 🧑‍💻</span>A
+              passionate software developer and a web developer. I have build
+              this portfolio to showcase my projects & skills and to show how
+              passionate i am towards developing things.
             </p>
             <p>
-              I hold a Btech degree in CSE from Integral University Lucknow. My
-              journey into the world of programming started during the lockdown
-              period when whole world is busy in fighting with corona virus and
-              here I started developing feelings for coding. Since then, I've
-              been on an exciting adventure of continuous learning and growth.
+              I hold a Btech degree in CSE from Integral University Lucknow. In
+              past 4 years :
+              <li>
+                i have crafted responsive, dynamic websites and user interfaces
+                that offer seamless user experiences.
+              </li>
+              <li>
+                Built robust backend systems ensuring high performance and
+                scalability.
+              </li>
+              <li>
+                Proficient in various data structures and algorithms, optimizing
+                code for efficiency. Successfully solved complex problems,
+                improving application performance and resource management.
+              </li>
+              <br />
+              Since then, I've been on an exciting adventure of continuous
+              learning and growth.
             </p>
             <p>
               I'm always open to new opportunities, collaborations, and
               discussions about all things tech. Feel free to reach out me
-              through my Contact section.
+              through my Contact section. 🤝
             </p>
-            <p>Let's build something cool & amazing !</p>
+            <p>📫 Let's build something cool & amazing !</p>
           </div>
 
           <div className="detailed-section-second mt-10 lg:mt-0 lg:w-[50%]">
@@ -215,20 +218,15 @@ const AboutDetailed = () => {
             <div className="same-style space-y-8 lg:space-x-8 lg:space-y-0 lg:flex-row">
               <p>
                 <hr className="horizontal-line my-6" />
-                <h3>
-                  Design <BsStars className="ml-5" />
-                </h3>
-                I specialize in developing visually striking and user-friendly
-                web applications.My approach is centered on understanding your
-                unique goals and translating them into a compelling design.
+                <h3>Design ✨</h3>I specialize in developing visually striking
+                and user-friendly web applications.My approach is centered on
+                understanding your unique goals and translating them into a
+                compelling design.
               </p>
               <p>
                 <hr className="horizontal-line my-6" />
-                <h3>
-                  Development <BsStars className="ml-5" />
-                </h3>
-                I provide comprehensive web development services tailored to
-                bring your digital vision to life.
+                <h3>Development ✨</h3>I provide comprehensive web development
+                services tailored to bring your digital vision to life.
               </p>
             </div>
           </div>

@@ -43,13 +43,13 @@ const Home = () => {
   useEffect(() => {
     let tl = gsap.timeline({});
     gsap.set(".nav-title", {
-      y: 100,
+      y: 40,
       opacity: 0,
     });
     tl.to(".nav-title", {
       y: 0,
       opacity: 1,
-      duration: 2,
+      duration: 1,
     });
 
     gsap.set(".loading-container", {
@@ -57,8 +57,8 @@ const Home = () => {
     });
     tl.to(".loading-container", {
       y: -1000,
-      duration: 1,
-      delay: 1.5,
+      duration: 0.8,
+      delay: 1,
     });
 
     gsap.set(".marquee-name , .occupation-div", {
@@ -68,7 +68,7 @@ const Home = () => {
     tl.to(".marquee-name , .occupation-div", {
       y: 0,
       opacity: 1,
-      duration: 1,
+      duration: 0.8,
     });
   }, []);
 

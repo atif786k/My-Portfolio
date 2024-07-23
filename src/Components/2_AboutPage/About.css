@@ -135,10 +135,13 @@
 .detailed-section-first p span {
   display: block;
   font-weight: 450;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   word-spacing: 2px;
   letter-spacing: -0.1rem;
   transition: all 0.2s ease-in;
+}
+.detailed-section-first p li{
+  padding: 4px 0px;
 }
 span.high {
   margin-bottom: 18px;
