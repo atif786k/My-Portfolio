@@ -39,7 +39,6 @@ const AboutDetailed = () => {
         start: "top 70%",
         end: "top 40%",
         scrub: 1,
-        // markers: true,
       },
       y: 0,
       opacity: 1,
@@ -48,28 +47,20 @@ const AboutDetailed = () => {
     });
 
     let tl = gsap.timeline({});
-    // gsap.set(".nav-title", {
-    //   y: 40,
-    //   opacity: 0,
-    // });
     tl.to(".nav-title", {
-      // y: 0,
-      // opacity: 1,
-      // duration: 1,
       translateY: 0,
       opacity: 1,
       duration: 1,
       ease: Power4.easeIn,
     });
-
-    gsap.set(".loading-container", {
-      y: 0,
-    });
     tl.to(".loading-container", {
-      y: -1000,
-      duration: 0.8,
-      delay: 1,
-      ease: Power4.easeInOut,
+      borderBottomLeftRadius: "50% 25%",
+      borderBottomRightRadius: "50% 25%",
+      translateY: "-100%",
+      opacity: 1,
+      duration: 1,
+      ease: Power4.easeIn,
+      delay: 0.6,
     });
     gsap.set(".detailed-section", {
       y: 300,
@@ -94,16 +85,17 @@ const AboutDetailed = () => {
 
   return (
     <>
-      <div className="loading-container">
-        <h3 className="urdu-text">عسسلم عليكم</h3>
-        <h2 className="bg-text">Hello</h2>
-        <h2 className="text-screen">
-          <h2 className="nav-title">
-            <span></span>About
-          </h2>
-        </h2>
-      </div>
       <div className="normalFont aboutDetailed-container">
+        <div className="loading-container">
+          <h3 className="urdu-text">عسسلم عليكم</h3>
+          <h2 className="bg-text">Hello</h2>
+          <h2 className="text-screen">
+            <h2 className="nav-title">
+              <span></span>About
+            </h2>
+          </h2>
+        </div>
+
         <nav className="aboutDetailed-nav lg:px-[180px] 3xl:px-[280px]">
           <h4>
             <span className="flex items-center">

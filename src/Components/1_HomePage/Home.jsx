@@ -42,24 +42,20 @@ const Home = () => {
 
   useEffect(() => {
     let tl = gsap.timeline({});
-    // gsap.set(".nav-title", {
-    //   y: 40,
-    // });
     tl.to(".nav-title", {
-      // y: 0,
       translateY: 0,
       opacity: 1,
       duration: 1,
       ease: Power4.easeIn,
     });
-    gsap.set(".loading-container", {
-      y: 0,
-    });
     tl.to(".loading-container", {
-      y: -1000,
+      borderBottomLeftRadius: "50% 25%",
+      borderBottomRightRadius: "50% 25%",
+      translateY: "-100%",
+      opacity: 1,
       duration: 1,
-      delay: 1,
-      ease: Power4.easeInOut,
+      ease: Power4.easeIn,
+      delay: 0.6,
     });
     gsap.set(".marquee-name , .occupation-div", {
       y: 300,
@@ -145,20 +141,22 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="loading-container">
-        <h3 className="urdu-text">عسسلم عليكم</h3>
-        <h2 className="bg-text">Hello</h2>
-        <h2 className="text-screen">
-          <h2 className="nav-title">
-            <span></span>Home
-          </h2>
-        </h2>
-      </div>
+
       <section
         ref={home}
         id="home"
         className="home-container normalFont md:bg-contain lg:px-[140px] 3xl:px-[280px]"
       >
+        <div className="loading-container">
+          <h3 className="urdu-text">عسسلم عليكم</h3>
+          <h2 className="bg-text">Hello</h2>
+          <h2 className="text-screen">
+            <h2 className="nav-title">
+              <span></span>Home
+            </h2>
+          </h2>
+        </div>
+
         <nav className="home-container-nav">
           <h4>
             <span className="flex items-center">

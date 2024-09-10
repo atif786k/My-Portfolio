@@ -69,6 +69,7 @@
   width: 100%;
   background-color: white;
   color: #222831;
+  position: relative;
 }
 .aboutDetailed-nav {
   padding: 44px 28px 12px 28px;
@@ -140,7 +141,7 @@
   letter-spacing: -0.1rem;
   transition: all 0.2s ease-in;
 }
-.detailed-section-first p li{
+.detailed-section-first p li {
   padding: 4px 0px;
 }
 span.high {
