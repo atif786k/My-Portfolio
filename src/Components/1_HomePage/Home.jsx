@@ -17,7 +17,7 @@ import Skills from "../4_SkillesPage/Skills";
 import Footer from "../5_FooterPage/Footer";
 import MagnetoButton from "../Magneto";
 
-import { gsap } from "gsap";
+import { gsap, Power0, Power4 } from "gsap";
 
 const Home = () => {
   const home = useRef(null);
@@ -42,25 +42,25 @@ const Home = () => {
 
   useEffect(() => {
     let tl = gsap.timeline({});
-    gsap.set(".nav-title", {
-      y: 40,
-      opacity: 0,
-    });
+    // gsap.set(".nav-title", {
+    //   y: 40,
+    // });
     tl.to(".nav-title", {
-      y: 0,
+      // y: 0,
+      translateY: 0,
       opacity: 1,
       duration: 1,
+      ease: Power4.easeIn,
     });
-
     gsap.set(".loading-container", {
       y: 0,
     });
     tl.to(".loading-container", {
       y: -1000,
-      duration: 0.8,
+      duration: 1,
       delay: 1,
+      ease: Power4.easeInOut,
     });
-
     gsap.set(".marquee-name , .occupation-div", {
       y: 300,
       opacity: 0,
@@ -148,7 +148,11 @@ const Home = () => {
       <div className="loading-container">
         <h3 className="urdu-text">عسسلم عليكم</h3>
         <h2 className="bg-text">Hello</h2>
-        <h2 className="nav-title">Home</h2>
+        <h2 className="text-screen">
+          <h2 className="nav-title">
+            <span></span>Home
+          </h2>
+        </h2>
       </div>
       <section
         ref={home}
@@ -240,7 +244,10 @@ const Home = () => {
             <BsArrowDownRight className="text-3xl mb-4" />
             <div className="occupation-div-containt">
               <button className="resume-btn">
-                <a href="https://drive.google.com/file/d/1UiY75L3ARJxQci2hi5qPyzdGNEE-DSa3/view?usp=drive_link" target="_blank">
+                <a
+                  href="https://drive.google.com/file/d/1UiY75L3ARJxQci2hi5qPyzdGNEE-DSa3/view?usp=drive_link"
+                  target="_blank"
+                >
                   Resume
                 </a>
               </button>

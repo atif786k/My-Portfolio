@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../3_ProjectPage/Project.css";
 import ProjectCard from "./ProjectCard";
 import MagnetoButton from "../Magneto";
+import { gsap, Power4 } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Project = (props) => {
   const ProjectDetails = [
@@ -54,6 +56,26 @@ const Project = (props) => {
       techStack: "HTML5, CSS, JavaScript",
     },
   ];
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // gsap.set("#card-container", { scale: 0.75, opacity: 0 });
+    gsap.to("#card-container", {
+      scrollTrigger: {
+        trigger: "#card-container",
+        start: "top 70%",
+        end: "top 75%",
+        // start: "top 100%",
+        // end: "bottom 40%",
+        scrub: true,
+      },
+      scale: 1,
+      opacity: 1,
+      duration: 1.5,
+      ease: Power4.easeIn,
+    });
+  }, []);
 
   return (
     <>

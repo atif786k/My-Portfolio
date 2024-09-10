@@ -5,20 +5,23 @@
   text-align: center;
   color: #222831;
 }
-
 .project-container h2 {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 0.02rem;
   text-transform: uppercase;
 }
-
 .project-container h3 {
   color: grey;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+}
+#card-container{
+  transform: scale(0.75);
+  opacity: 0;
+  transition: all ease-in 0.5s;
 }
 
 /* button animation */

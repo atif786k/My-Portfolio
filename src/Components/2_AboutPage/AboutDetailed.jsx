@@ -48,14 +48,18 @@ const AboutDetailed = () => {
     });
 
     let tl = gsap.timeline({});
-    gsap.set(".nav-title", {
-      y: 40,
-      opacity: 0,
-    });
+    // gsap.set(".nav-title", {
+    //   y: 40,
+    //   opacity: 0,
+    // });
     tl.to(".nav-title", {
-      y: 0,
+      // y: 0,
+      // opacity: 1,
+      // duration: 1,
+      translateY: 0,
       opacity: 1,
       duration: 1,
+      ease: Power4.easeIn,
     });
 
     gsap.set(".loading-container", {
@@ -65,6 +69,7 @@ const AboutDetailed = () => {
       y: -1000,
       duration: 0.8,
       delay: 1,
+      ease: Power4.easeInOut,
     });
     gsap.set(".detailed-section", {
       y: 300,
@@ -92,7 +97,11 @@ const AboutDetailed = () => {
       <div className="loading-container">
         <h3 className="urdu-text">عسسلم عليكم</h3>
         <h2 className="bg-text">Hello</h2>
-        <h2 className="nav-title">About</h2>
+        <h2 className="text-screen">
+          <h2 className="nav-title">
+            <span></span>About
+          </h2>
+        </h2>
       </div>
       <div className="normalFont aboutDetailed-container">
         <nav className="aboutDetailed-nav lg:px-[180px] 3xl:px-[280px]">
