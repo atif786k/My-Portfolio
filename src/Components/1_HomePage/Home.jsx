@@ -254,10 +254,10 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <About aboutRef={about} />
+      <About aboutRef={about}/>
       <Project projectsRef={projects} />
       <Skills />
-      <Footer contactRef={contact} />
+      <Footer contactRef={contact}/>
     </>
   );
 };

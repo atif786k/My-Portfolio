@@ -1,0 +1,11 @@
+.more-proj-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more-proj-container h1{
+    font-size: 24px;
+    font-weight: 400;
+}

@@ -1,6 +1,7 @@
 import "./App.css";
 import Home from "./Components/1_HomePage/Home";
 import AboutDetailed from "./Components/2_AboutPage/AboutDetailed";
+import MoreProj from "./Components/3_ProjectPage/MoreProj";
 import ScrollToTop from "./Components/ScrollToTop";
 import Lenis from "@studio-freight/lenis";
 import { gsap } from "gsap";
@@ -28,6 +29,11 @@ function App() {
             path="/aboutDetailed"
             element={<AboutDetailed />}
           ></Route>
+          <Route
+          exact
+          path="/moreProj"
+          element={<MoreProj/>}
+        ></Route>
         </Routes>
       </Router>
     </>

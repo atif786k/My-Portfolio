@@ -87,7 +87,7 @@ const About = (props) => {
           <MagnetoButton
             buttonClass="about-btn"
             buttonClass1="about_type1"
-            textClass="about-btn-span"
+            textClass="about-btn-span paraFont tracking-tight"
             buttonText="About me"
             x={60}
             y={70}

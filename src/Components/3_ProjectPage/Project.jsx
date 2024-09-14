@@ -4,6 +4,8 @@ import ProjectCard from "./ProjectCard";
 import MagnetoButton from "../Magneto";
 import { gsap, Power4 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
+
 
 const Project = (props) => {
   const ProjectDetails = [
@@ -102,6 +104,7 @@ const Project = (props) => {
           })}
         </div>
         <div className="w-[100%] flex justify-center">
+          <Link to="/moreProj">
           <MagnetoButton
             buttonClass="project-btn"
             buttonClass1="type1"
@@ -113,7 +116,8 @@ const Project = (props) => {
             }
             x={25}
             y={35}
-          />
+            />
+            </Link>
         </div>
       </section>
     </>
