@@ -10,8 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const lenis = new Lenis();
-  lenis.on("scroll", (e) => {
-  });
+  lenis.on("scroll", (e) => {});
   lenis.on("scroll", ScrollTrigger.update);
   gsap.ticker.add((time) => {
     lenis.raf(time * 1000);
@@ -29,11 +28,7 @@ function App() {
             path="/aboutDetailed"
             element={<AboutDetailed />}
           ></Route>
-          <Route
-          exact
-          path="/moreProj"
-          element={<MoreProj/>}
-        ></Route>
+          {/* <Route exact path="/moreProj" element={<MoreProj />}></Route> */}
         </Routes>
       </Router>
     </>

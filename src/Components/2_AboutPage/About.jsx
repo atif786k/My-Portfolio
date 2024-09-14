@@ -83,11 +83,11 @@ const About = (props) => {
         <p className="about-phrase paraFont md:w-[60%]">
           Innovative Web Developer and Software Developer with proven abilities in both frontend and backend tools, as well as in Data Structures and Algorithms (DSA). Capable of working in collaborative environments while staying focused on achieving high-quality results under strict deadlines.
         </p>
-        <Link to="/aboutdetailed" rel="" className="">
+        <Link to="/aboutdetailed" rel="" className="paraFont">
           <MagnetoButton
             buttonClass="about-btn"
             buttonClass1="about_type1"
-            textClass="about-btn-span paraFont tracking-tight"
+            textClass="about-btn-span"
             buttonText="About me"
             x={60}
             y={70}
