@@ -243,7 +243,7 @@ const Home = () => {
             <div className="occupation-div-containt">
               <button className="resume-btn">
                 <a
-                  href="https://drive.google.com/file/d/1UiY75L3ARJxQci2hi5qPyzdGNEE-DSa3/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1PVSedFOOAuQv_-2SPyAfF1H_pkRweUPI/view?usp=drive_link"
                   target="_blank"
                 >
                   Resume
