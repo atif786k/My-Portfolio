@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
       <div id="card1" className="project-card1">
         <figure id="card1" className="project-img-container">
           <a href={props.URL} target="_blank">
-            <img src={props.image} alt="" />
+            <img src={props.image} alt="Screenshot of the project" />
           </a>
         </figure>
         <div className="project-title paraFont">

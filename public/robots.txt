@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atifolio.netlify.app/sitemap.xml
