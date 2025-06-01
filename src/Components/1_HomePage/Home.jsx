@@ -106,7 +106,13 @@ const Home = () => {
             <h5 className="normalFont">social</h5>
             <ul className="space-x-4">
               <li>
-                <a href="https://github.com/atif786k" target="_blank">
+                <a
+                  href="https://github.com/atif786k"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit my GitHub"
+                  aria-label="GitHub"
+                >
                   <IoLogoGithub />
                 </a>
               </li>
@@ -114,6 +120,9 @@ const Home = () => {
                 <a
                   href="https://www.linkedin.com/in/mohammad-atif-a14b04205/"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit my LinkedIn"
+                  aria-label="LinkedIn"
                 >
                   <IoLogoLinkedin />
                 </a>
@@ -122,18 +131,32 @@ const Home = () => {
                 <a
                   href="https://www.instagram.com/_mohd.atif__/?hl=en"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit my Instagram"
+                  aria-label="Instagram"
                 >
                   <IoLogoInstagram />
                 </a>
               </li>
-
               <li>
-                <a href="https://www.facebook.com/moh.atif.927" target="_blank">
+                <a
+                  href="https://www.facebook.com/moh.atif.927"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit my Facebook"
+                  aria-label="Facebook"
+                >
                   <IoLogoFacebook />
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/moh.atif.927" target="_blank">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Visit my Twitter"
+                  aria-label="Twitter"
+                >
                   <IoLogoTwitter />
                 </a>
               </li>
