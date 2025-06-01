@@ -5,7 +5,6 @@ import MagnetoButton from "../Magneto";
 import { gsap, Power4 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
 const Project = (props) => {
   const ProjectDetails = [
     {
@@ -19,10 +18,10 @@ const Project = (props) => {
     {
       projNo: "02",
       projName: "Store Pad",
-      imageURL: "projectImages/storePad1.png",
+      imageURL: "projectImages/storePad2.png",
       wrokingYear: "2024",
-      url: "",
-      techStack: "MongoDB, ExpressJS, React, NodeJS, PassportJS",
+      url: "https://github.com/atif786k/StorePad",
+      techStack: "MongoDB, React, NodeJS, PassportJS, Cron (Auto-delete Notes)",
     },
     {
       projNo: "03",
@@ -30,31 +29,31 @@ const Project = (props) => {
       imageURL: "projectImages/studySync1.png",
       wrokingYear: "2023-24",
       url: "https://atifolio.netlify.app/",
-      techStack: "BotPress Studio, Firebase, React, Tailwindcss",
+      techStack: "Chat Bot, Firebase Auth, React, Tailwindcss",
     },
     {
       projNo: "04",
+      projName: "People.Co",
+      imageURL: "projectImages/peopleCo.png",
+      wrokingYear: "2024",
+      url: "https://edunova-assis.vercel.app/",
+      techStack: "Tanstack, Zod, React, Tailwindcss",
+    },
+    {
+      projNo: "05",
+      projName: "AI Planet",
+      imageURL: "projectImages/aiPlanet.png",
+      wrokingYear: "2024",
+      url: "https://ai-planet-assis.vercel.app/",
+      techStack: "JavaScript, React, Tailwindcss",
+    },
+    {
+      projNo: "06",
       projName: "Fresh Feeds",
       imageURL: "projectImages/freshFeeds.png",
       wrokingYear: "2023",
       url: "https://fresh-feeds.netlify.app/",
       techStack: "React, Tailwindcss, API-Integration",
-    },
-    {
-      projNo: "05",
-      projName: "Quiz Nest",
-      imageURL: "projectImages/quizWeb1.png",
-      wrokingYear: "2023",
-      url: "https://quiz-nest.netlify.app",
-      techStack: "Firebase Authentication, React, JavaScript",
-    },
-    {
-      projNo: "06",
-      projName: "Myntra Clone",
-      imageURL: "projectImages/myntraClone1.png",
-      wrokingYear: "2022",
-      url: "https://myntra-clone-swart.vercel.app/",
-      techStack: "HTML5, CSS, JavaScript",
     },
   ];
 
@@ -114,7 +113,13 @@ const Project = (props) => {
             }
             x={25}
             y={35}
-            />
+            onClick={() =>
+              window.open(
+                "https://github.com/atif786k?tab=repositories",
+                "_blank"
+              )
+            }
+          />
         </div>
       </section>
     </>

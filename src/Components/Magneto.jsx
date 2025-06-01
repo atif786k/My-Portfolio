@@ -8,6 +8,7 @@ const Magneto = ({
   textClass,
   x,
   y,
+  onClick
 }) => {
   useEffect(() => {
     const magneto = document.querySelector(`.${buttonClass}`);
@@ -59,7 +60,7 @@ const Magneto = ({
   }, []);
 
   return (
-    <button className={`${buttonClass} ${buttonClass1}`}>
+    <button className={`${buttonClass} ${buttonClass1}`} onClick={onClick}>
       <span className={textClass}>{buttonText}</span>
     </button>
   );

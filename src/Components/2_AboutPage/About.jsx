@@ -81,7 +81,11 @@ const About = (props) => {
         className="about-container fancyFont md:flex-row md:justify-evenly md:mt-[140px] md:flex lg:px-[180px] 3xl:px-[280px]"
       >
         <p className="about-phrase paraFont md:w-[60%]">
-          Innovative Web Developer and Software Developer with proven abilities in both frontend and backend tools, as well as in Data Structures and Algorithms (DSA). Capable of working in collaborative environments while staying focused on achieving high-quality results under strict deadlines.
+          Full Stack Developer with expertise in Node, MongoDB / MySQL and
+          Express.js. Experienced in building secure RESTful APIs, JWT
+          authentication, RBAC model and advanced caching. Skilled in creating
+          responsive UI components with React.js and Tailwind CSS, writing unit
+          tests with JEST, and deploying on Vercel / Netlify.
         </p>
         <Link to="/aboutdetailed" rel="" className="paraFont">
           <MagnetoButton

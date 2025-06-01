@@ -238,18 +238,18 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="occupation-div lg:absolute xl:right-[12%]">
+          <div className="occupation-div lg:absolute xl:right-[8%]">
             <BsArrowDownRight className="text-3xl mb-4" />
             <div className="occupation-div-containt">
               <button className="resume-btn">
                 <a
-                  href="https://drive.google.com/file/d/1PVSedFOOAuQv_-2SPyAfF1H_pkRweUPI/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1RiJL6aSA-8-Pa65w1rLIn3-1Lqm1INUA/view?usp=drive_link"
                   target="_blank"
                 >
                   Resume
                 </a>
               </button>
-              <h2>Designer & Developer</h2>
+              <h2>Full-stack Dev @StarterYou</h2>
             </div>
           </div>
         </div>
