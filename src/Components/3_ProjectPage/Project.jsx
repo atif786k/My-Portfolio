@@ -28,7 +28,7 @@ const Project = (props) => {
       projName: "Study Sync",
       imageURL: "projectImages/studySync1.png",
       wrokingYear: "2023-24",
-      url: "https://github.com/atif786k/Study-Sync",
+      url: "https://studey-sync.netlify.app/",
       techStack: "Chat Bot, Firebase Auth, React, Tailwindcss",
     },
     {
