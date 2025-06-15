@@ -20,7 +20,7 @@ const Project = (props) => {
       projName: "Store Pad",
       imageURL: "projectImages/storePad2.png",
       wrokingYear: "2024",
-      url: "https://github.com/atif786k/StorePad",
+      url: "https://store-pad.vercel.app/",
       techStack: "MongoDB, React, NodeJS, PassportJS, Cron (Auto-delete Notes)",
     },
     {
@@ -28,7 +28,7 @@ const Project = (props) => {
       projName: "Study Sync",
       imageURL: "projectImages/studySync1.png",
       wrokingYear: "2023-24",
-      url: "https://atifolio.netlify.app/",
+      url: "https://github.com/atif786k/Study-Sync",
       techStack: "Chat Bot, Firebase Auth, React, Tailwindcss",
     },
     {
@@ -108,7 +108,7 @@ const Project = (props) => {
             textClass="project-btn-span"
             buttonText={
               <>
-                More Work <sup className="animate-pulse">8</sup>
+                More Work <sup className="animate-pulse">10+</sup>
               </>
             }
             x={25}
